@@ -1,0 +1,12 @@
+<div class="container">
+        <div class="projects-container" [@expansionPanel]="leftExpanded ? 'open' : 'closed'">
+                <app-projects-page></app-projects-page>
+        </div>
+        <div class="splash-container"[@expansionPanel]="leftExpanded||rightExpanded ? 'closed' : 'open'">
+                <app-splash-page></app-splash-page>
+        </div>
+        <div class="journey-container" [@expansionPanel]="rightExpanded ? 'open' : 'closed'">
+                <app-journey-page></app-journey-page>
+        </div>
+</div>
+

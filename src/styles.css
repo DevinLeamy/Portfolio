@@ -10,11 +10,11 @@ body {
   font-family: Roboto, Arial, sans-serif;
 }
 /* Make scroll bar invisible */
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 0px;
   height: 0px;
   background: transparent;
-}
+} */
 
 /* Removes blue border of selected buttons */
 button:focus {
@@ -47,4 +47,56 @@ input:focus {
 
 select:focus {
   outline: 0;
+}
+
+/* Transforms */
+.transform-color {
+        -webkit-transition: color 0.2s;
+        -moz-transition: color 0.2s;
+        -o-transition: color 0.2s;
+        transition: color 0.2s;
+}
+
+.transform-width {
+        -webkit-transition: width 0.2s;
+        -moz-transition: width 0.2s;
+        -o-transition: width 0.2s;
+        transition: width 0.2s;
+}
+
+.transform-height {
+        -webkit-transition: height 0.2s;
+        -moz-transition: height 0.2s;
+        -o-transition: height 0.2s;
+        transition: height 0.2s;
+}
+
+.transform-opacity {
+        -webkit-transition: opacity 0.2s;
+        -moz-transition: opacity 0.2s;
+        -o-transition: opacity 0.2s;
+        transition: opacity 0.2s;
+}
+
+.transform-line-height {
+        -webkit-transition: line-height 0.2s;
+        -moz-transition: line-height 0.2s;
+        -o-transition: line-height 0.2s;
+        transition: line-height 0.2s;
+}
+
+.transform-font-size {
+        -webkit-transition: font-size 0.2s;
+        -moz-transition: font-size 0.2s;
+        -o-transition: font-size 0.2s;
+        transition: font-size 0.2s;
+}
+
+.no-select {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none; 
+        -khtml-user-select: none; 
+        -moz-user-select: none; 
+        -ms-user-select: none; 
+        user-select: none;
 }

@@ -1,1 +1,17 @@
-/* Placeholder text */
+.container {
+        width: 100%;
+        height: 100%;
+        background-color: green;
+}
+
+.side-button-container {
+        display: flex;
+        height: calc(100% - 80px);
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+}
+
+.float-right {
+        float: right;
+}
