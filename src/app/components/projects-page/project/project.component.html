@@ -1,0 +1,32 @@
+<div class="container">
+        <div class="left-container">
+                <div class="image-container">
+                        <div class="image">
+
+                        </div>
+                </div>
+                <div class="tags-container">
+                        <div class="language-tags">
+                                <app-tag *ngFor="let language of this.project.languages" [text]="language">
+                                </app-tag>
+                        </div>
+                        <div class="other-tags" *ngIf="this.project.tags.length > 0">
+                                <app-tag *ngFor="let tag of this.project.tags" [text]="tag">
+
+                                </app-tag>
+                        </div>
+                </div>
+        </div>
+        <div class="right-container">
+                <div class="title-container">
+                        <div class="title">
+                                {{this.project.title}}
+                        </div>
+                </div>
+                <div class="text-container">
+                        <div class="text">
+                                {{this.project.text}}
+                        </div>
+                </div>
+        </div>
+</div>

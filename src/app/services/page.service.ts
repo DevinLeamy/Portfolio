@@ -4,7 +4,7 @@ import { Subject } from "rxjs"
         providedIn: "root"
 })
 export class PageService {
-        leftExpanded: boolean = false
+        leftExpanded: boolean = true
         rightExpanded: boolean = false
         leftExpandedUpdated = new Subject<boolean>()
         rightExpandedUpdated = new Subject<boolean>()

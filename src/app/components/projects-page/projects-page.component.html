@@ -1,7 +1,20 @@
-<div class="container">
-      <div class="side-button-container float-right">
-              <app-arrow-button (click)="this.pageService.rightButtonClicked()">
+<div class="side-button-container">
+        <app-arrow-button (click)="this.pageService.rightButtonClicked()">
                       >
-              </app-arrow-button>
-      </div>  
+        </app-arrow-button>
+</div>  
+<div class="container">
+        <div class="projects-header-container">
+                <div class="projects-header">
+                        my work
+                </div>
+        </div>
+        <div class="projects-container">
+                <div class="project-container" *ngFor="let project of this.projects">
+                        <app-project [project]="project">
+                        </app-project>
+                </div>
+               
+        </div>
 </div>
+

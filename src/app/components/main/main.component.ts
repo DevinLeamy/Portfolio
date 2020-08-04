@@ -10,12 +10,14 @@ import { Subscription } from 'rxjs'
                         state("open", style({
                                 width: "100%",
                                 visibility: "visible",
-                                height: "100%"
+                                height: "100%",
+                                opacity: "1"
                         })),
                         state("closed", style({
                                 width: "0%",
                                 visibility: "hidden",
-                                height: "0%"
+                                height: "0%",
+                                opacity: "0"
                         })),
                         transition("open => closed", [
                                 animate("0.2s")

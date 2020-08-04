@@ -10,6 +10,8 @@ import { JourneyPageComponent } from './components/journey-page/journey-page.com
 import { FooterPageComponent } from './components/footer-page/footer-page.component'
 import { ProjectsPageComponent } from './components/projects-page/projects-page.component'
 import { ArrowButtonComponent } from "./components/arrow-button/arrow-button.component"
+import { ProjectComponent } from "./components/projects-page/project/project.component"
+import { TagComponent } from "./components/projects-page/project/tag/tag.component"
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { ArrowButtonComponent } from "./components/arrow-button/arrow-button.com
     FooterPageComponent,
     ProjectsPageComponent,
     MainComponent,
-    ArrowButtonComponent
+    ArrowButtonComponent,
+    ProjectComponent,
+    TagComponent
   ],
   imports: [
     BrowserModule,
