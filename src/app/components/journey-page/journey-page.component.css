@@ -5,6 +5,7 @@
 }
 
 .side-button-container {
+        position: absolute;
         display: flex;
         height: calc(100% - 80px);
         justify-content: center;
@@ -12,6 +13,7 @@
         width: 80px;
 }
 
-.float-left {
-        float: left;
+.left {
+        left: 0;
+        top: 0;
 }
