@@ -5,11 +5,11 @@
 </div>  
 <div class="container">
         <div class="projects-header-container">
-                <div class="projects-header">
-                        my work
+                <div class="projects-header no-select">
+                        What I've Made
                 </div>
         </div>
-        <div class="projects-container">
+        <div class="projects-container" [@projectsAnimation]='this.projects.length'>
                 <div class="project-container" *ngFor="let project of this.projects">
                         <app-project [project]="project">
                         </app-project>

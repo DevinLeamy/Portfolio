@@ -29,10 +29,11 @@ let pageSlide = [
                         query(':enter', [
                                 style({
                                         position: 'absolute',
-                                        height: '400px',
-                                        width: '400px',
-                                        left: 'calc(150% - 200px)',
-                                        top: 'calc(50% - 200px)'
+                                        height: '500px',
+                                        width: '500px',
+                                        left: 'calc(150% - 250px)',
+                                        top: 'calc(50% - 250px)',
+                                        opacity: 0
  
                                 }),
                         ]),
@@ -43,48 +44,49 @@ let pageSlide = [
                                         width: '100%',
                                         left: 0,
                                         top: 0
- 
                                 }),
                         ]),
                         query(':leave', [
                                 animate(400, style({
-                                        height: '400px',
-                                        width: '400px',
-                                        left: 'calc(50% - 200px)',
-                                        top: 'calc(50% - 200px)'
+                                        height: '500px',
+                                        width: '500px',
+                                        left: 'calc(50% - 250px)',
+                                        top: 'calc(50% - 250px)',
+                                        opacity: 1
                                 })),
                         ]),
                         group([
                                 query(":enter", [
-                                        animate('500ms ease', style({
-                                                left: 'calc(50% - 200px)'
+                                        animate('400ms ease', style({
+                                                left: 'calc(50% - 250px)',
+                                                opacity: 1
                                         }))
                                 ]),
                                 query(":leave", [
-                                        animate('500ms ease', style({
-                                                left: 'calc(-50% - 200px)',
+                                        animate('400ms ease', style({
+                                                left: 'calc(-50% - 250px)',
                                                 opacity: 0
                                         })),
                                 ])
                         ]),
                         query(":enter", [
-                                animate(400, style({
+                                animate('300ms ease', style({
                                         width: "100%",
                                         height: "100%",
                                         top: 0,
                                         left: 0
                                 }))
-                        ]), 
-                        query(":enter", animateChild())
+                        ])
                 ]),
                 transition('AboutPage => SplashPage, SplashPage => ProjectPage', [
                         query(':enter', [
                                 style({
                                         position: 'absolute',
-                                        height: '400px',
-                                        width: '400px',
-                                        left: 'calc(-50% - 200px)',
-                                        top: 'calc(50% - 200px)'
+                                        height: '500px',
+                                        width: '500px',
+                                        left: 'calc(-50% - 250px)',
+                                        top: 'calc(50% - 250px)',
+                                        opacity: 0
  
                                 }),
                         ]),
@@ -95,38 +97,39 @@ let pageSlide = [
                                         width: '100%',
                                         left: 0,
                                         top: 0
- 
                                 }),
                         ]),
                         query(':leave', [
                                 animate(400, style({
-                                        height: '400px',
-                                        width: '400px',
-                                        left: 'calc(50% - 200px)',
-                                        top: 'calc(50% - 200px)'
+                                        height: '500px',
+                                        width: '500px',
+                                        left: 'calc(50% - 250px)',
+                                        top: 'calc(50% - 250px)',
+                                        opacity: 1
                                 })),
                         ]),
                         group([
                                 query(":enter", [
-                                        animate('500ms ease', style({
-                                                left: 'calc(50% - 200px)'
+                                        animate('400ms ease', style({
+                                                left: 'calc(50% - 250px)',
+                                                opacity: 1
                                         }))
                                 ]),
                                 query(":leave", [
-                                        animate('500ms ease', style({
-                                                left: 'calc(150% - 200px)',
+                                        animate('400ms ease', style({
+                                                left: 'calc(150% - 250px)',
                                                 opacity: 0
                                         })),
                                 ])
                         ]),
                         query(":enter", [
-                                animate(400, style({
+                                animate('300ms ease', style({
                                         width: "100%",
                                         height: "100%",
                                         top: 0,
                                         left: 0
                                 }))
-                        ]),
+                        ])
                 ])    
         ])
 ]

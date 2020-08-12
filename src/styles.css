@@ -8,7 +8,7 @@ body, html {
 
 body {
         font-family: Roboto, Arial, sans-serif;
-        background-color: rgb(73, 79, 90);
+        background-color: rgb(29, 31, 36);
 }
 /* Make scroll bar invisible */
 ::-webkit-scrollbar {
@@ -60,6 +60,13 @@ app-arrow-button:focus {
         -moz-transition: color 0.2s;
         -o-transition: color 0.2s;
         transition: color 0.2s;
+}
+
+.transform-border-radius {
+        -webkit-transition: border-radius 0.2s;
+        -moz-transition: border-radius 0.2s;
+        -o-transition: border-radius 0.2s;
+        transition: border-radius 0.2s;
 }
 
 .transform-width {
