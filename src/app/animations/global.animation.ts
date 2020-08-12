@@ -46,6 +46,17 @@ let pageSlide = [
                                         top: 0
                                 }),
                         ]),
+                        query(".project-container", [
+                                stagger(100, [
+                                        animate(200, style({
+                                                opacity: 0,
+                                                width: 0,
+                                                height: 0,
+                                                borderRadius: 5,
+                                                transform: 'translateX(500px) translateY(500px) rotate(360deg)'
+                                        }))
+                                ])
+                        ],{optional: true}),
                         query(':leave', [
                                 animate(400, style({
                                         height: '500px',
@@ -79,6 +90,12 @@ let pageSlide = [
                         ])
                 ]),
                 transition('AboutPage => SplashPage, SplashPage => ProjectPage', [
+                         query(".project-container", 
+                                style({
+                                        opacity: 0,
+                                        transform: 'translateY(-200px)'
+                                }), {optional: true}  
+                        ),
                         query(':enter', [
                                 style({
                                         position: 'absolute',
@@ -129,7 +146,13 @@ let pageSlide = [
                                         top: 0,
                                         left: 0
                                 }))
-                        ])
+                        ]),
+                        query(".project-container", stagger(150, [
+                                        animate("500ms cubic-bezier(0.35, 0, 0.25, 1)", keyframes([
+                                                style({opacity: 1, transform: 'rotate(0deg)'})
+                                        ]))
+                                ]), {optional: true}  
+                        ),
                 ])    
         ])
 ]
