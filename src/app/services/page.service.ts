@@ -4,7 +4,7 @@ import { Subject } from "rxjs"
         providedIn: "root"
 })
 export class PageService {
-        leftExpanded: boolean = true
+        leftExpanded: boolean = false
         rightExpanded: boolean = false
         leftExpandedUpdated = new Subject<boolean>()
         rightExpandedUpdated = new Subject<boolean>()
@@ -39,6 +39,18 @@ export class PageService {
                 }
                 this.updateRightExpanded()
                 this.updateLeftExpanded()
+        }
+
+        //Get route of component to the left of the current component
+        getRouteLeft() {
+                if (this.rightExpanded) return '/splash'
+                return '/projects'
+        }
+
+        //Get route of component to the right of the current component
+        getRouteRight() {
+                if (this.leftExpanded) return '/splash'
+                return '/about'
         }
 
         //Updates rightExpanded value through observables

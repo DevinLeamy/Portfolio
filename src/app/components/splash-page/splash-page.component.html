@@ -1,11 +1,11 @@
 <div class="container">
         <div class="side-button-container left">
-                <app-arrow-button (click)="this.pageService.leftButtonClicked()">
+                <app-arrow-button (click)="this.pageService.leftButtonClicked()" [routerLink]="'/projects'">
                         <
                 </app-arrow-button>
         </div>
         <div class="side-button-container right">
-                <app-arrow-button (click)="this.pageService.rightButtonClicked()">
+                <app-arrow-button (click)="this.pageService.rightButtonClicked()" [routerLink]="'/about'">
                         >
                 </app-arrow-button>
         </div>

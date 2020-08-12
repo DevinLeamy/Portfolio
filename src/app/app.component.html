@@ -1,1 +1,8 @@
-<app-main></app-main>
+<div [@pageAnimation]="prepareRoute(outlet)" class="container">
+        <router-outlet #outlet="outlet"> 
+                <!-- <app-arrow-button class='right-button' *ngIf="!this.leftExpanded" (click)="this.pageService.leftButtonClicked()" [routerLink]="this.pageService.getRouteLeft()"><</app-arrow-button>
+                <app-arrow-button class="left-button" *ngIf="!this.rightExpanded" (click)="this.pageService.rightButtonClicked()" [routerLink]="this.pageService.getRouteRight()">></app-arrow-button>
+                <app-arrow-button class="bottom-button" *ngIf="!this.rightExpanded && !this.leftExpanded">v</app-arrow-button> -->
+        </router-outlet>
+</div>
+

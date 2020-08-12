@@ -4,7 +4,6 @@ import { NgModule } from '@angular/core'
 import { AppRoutingModule } from './app-routing.module'
 
 import { AppComponent } from './app.component'
-import { MainComponent } from "./components/main/main.component"
 import { SplashPageComponent } from './components/splash-page/splash-page.component'
 import { JourneyPageComponent } from './components/journey-page/journey-page.component'
 import { FooterPageComponent } from './components/footer-page/footer-page.component'
@@ -20,7 +19,6 @@ import { TagComponent } from "./components/projects-page/project/tag/tag.compone
     JourneyPageComponent,
     FooterPageComponent,
     ProjectsPageComponent,
-    MainComponent,
     ArrowButtonComponent,
     ProjectComponent,
     TagComponent

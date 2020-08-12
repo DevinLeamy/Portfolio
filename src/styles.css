@@ -1,52 +1,57 @@
 body, html {
-  margin: 0px;
-  width: 100%;
-  height: 100%;
-  padding: 0px;
-  overflow: auto;
+        margin: 0px;
+        width: 100%;
+        height: 100%;
+        padding: 0px;
+        overflow: auto;
 }
 
 body {
-  font-family: Roboto, Arial, sans-serif;
+        font-family: Roboto, Arial, sans-serif;
+        background-color: rgb(73, 79, 90);
 }
 /* Make scroll bar invisible */
-/* ::-webkit-scrollbar {
-  width: 0px;
-  height: 0px;
-  background: transparent;
-} */
+::-webkit-scrollbar {
+        width: 0px;
+        height: 0px;
+        background: transparent;
+}
 
 /* Removes blue border of selected buttons */
 button:focus {
-  outline: 0;
+        outline: 0;
 }
 
 div:focus {
-  outline: 0;
+        outline: 0;
 }
 
 span:focus {
-  outline: 0;
+        outline: 0;
 }
 
 img:focus {
-  outline: 0;
+        outline: 0;
 }
 
 textarea:focus {
-  outline: 0;
+        outline: 0;
 }
 
 p:focus {
-  outline: 0;
+        outline: 0;
 }
 
 input:focus {
-  outline: 0;
+        outline: 0;
 }
 
 select:focus {
-  outline: 0;
+        outline: 0;
+}
+
+app-arrow-button:focus {
+        outline: 0;
 }
 
 /* Transforms */
