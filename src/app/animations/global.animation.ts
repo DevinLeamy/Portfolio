@@ -56,12 +56,12 @@ let pageSlide = [
                         ]),
                         group([
                                 query(":enter", [
-                                        animate('750ms ease', style({
+                                        animate('500ms ease', style({
                                                 left: 'calc(50% - 200px)'
                                         }))
                                 ]),
                                 query(":leave", [
-                                        animate('750ms ease', style({
+                                        animate('500ms ease', style({
                                                 left: 'calc(-50% - 200px)',
                                                 opacity: 0
                                         })),
@@ -108,12 +108,12 @@ let pageSlide = [
                         ]),
                         group([
                                 query(":enter", [
-                                        animate('750ms ease', style({
+                                        animate('500ms ease', style({
                                                 left: 'calc(50% - 200px)'
                                         }))
                                 ]),
                                 query(":leave", [
-                                        animate('750ms ease', style({
+                                        animate('500ms ease', style({
                                                 left: 'calc(150% - 200px)',
                                                 opacity: 0
                                         })),
