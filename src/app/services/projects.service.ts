@@ -15,7 +15,7 @@ export class ProjectsService {
                         imageUrl: "../../../../assets/images/chess-image.png",
                         iconUrl: "../../../../assets/images/chess-me.png",
                         link: "https://github.com/DevinLeamy/Chess.me",
-                        text: "I brought the offical game of coffee-tables around the world to the iPhone with Chess.me. Chess.me is a unique mobile chess app that support three engaging game modes: '.COUPLE': pass-and-play chess, '.BLUETOOTH': bluetooth chess implemented using Xcode's Multipeer Connectivity framework and, '.ME': a challenging mode that puts players up against an infinitly clever Chess AI.",
+                        text: "I brought the offical game of coffee tables around the world to the iPhone with Chess.me. Chess.me is a unique mobile chess app that support three engaging game modes, namely, .COUPLE: pass-and-play chess, .BLUETOOTH: local wireless chess with friends and, .ME: a single player, challenging, gamemode that puts players up against an infinitly clever Chess AI.",
                         languages: ["swift"],
                         tags: ["Xcode"]
                 },
@@ -26,7 +26,7 @@ export class ProjectsService {
                         imageUrl: "../../../../assets/images/ddm-rumble-image.png",
                         iconUrl: "../../../../assets/images/ddm-rumble.png",
                         link: "https://github.com/DevinLeamy/DDM",
-                        text: "Rumble - My Dope Messenger, is a thread-based messenging platform that sits upon a responsive and intuitive Angular UI. Rumble helps break down the barriers to personal communitation brought up by COVID-19 by making discourse with others easy and accessible. Create chats, make friends, Rumble.",
+                        text: "Rumble - My Dope Messenger, is a thread-based messenging platform that sits upon a responsive and intuitive Angular UI. Rumble helps break down the barriers to personal communitation built up throughout the COVID-19 pandemic by making discourse with others easier and more accessible. Create chats, make friends, Rumble.",
                         languages: ["typescript", "javascript", "html", "css"],
                         tags: ["Angular, Node, Express, MongoDB, Heroku"]
                 },
@@ -37,7 +37,7 @@ export class ProjectsService {
                         imageUrl: "../../../../assets/images/competitive-programming-image.png",
                         iconUrl: "../../../../assets/images/competitive-programming.png",
                         link: "https://github.com/DevinLeamy/Competitive-Programming",
-                        text: "Months of solving coding problems on Codeforces, LeetCode, DMOJ and other platforms has culminated into a noteworthy archive of algorithms. This archive, and the algorithms therein, utilize a variety of data structures and approaches, from 2D-Matricies in Greedy algorithms to Sparse-Tables in Dynamic Programming algorithms.",
+                        text: "Months of solving coding problems on Codeforces, LeetCode, DMOJ and other platforms has culminated into a noteworthy archive of algorithms. This archive, and the algorithms therein, utilize a variety of data structures and approaches, from Union-Finds in Greedy algorithms to Sparse-Tables in Dynamic Programming algorithms.",
                         languages: ["c++", "java", "c"],
                         tags: ["Codeforces", "LeetCode", "DMOJ"]
                 },
@@ -48,7 +48,7 @@ export class ProjectsService {
                         imageUrl: "../../../../assets/images/pacman-image2.png",
                         iconUrl: "../../../../assets/images/pacman-ghost.png",
                         link: "https://github.com/DevinLeamy/Pacman",
-                        text: "I made an accurate recreation of the game that was once loved, is univerally known and, stands as a hallmark of arcade-games era of the 80's, Pacman. This recreation is complete with a splash screen, four AI ghosts, animations, sounds, fruits and progressively more challenging levels. Additionally I logged it's development on Youtube @devinleamy.",
+                        text: "I made an accurate recreation of the game that was once loved, is univerally known and, stands as a hallmark of the arcade-game era of the 80's, Pacman. This recreation is complete with a splash screen, four AI ghosts, animations, sounds, fruits and, progressively more challenging levels. Additionally, I logged it's development on Youtube @devinleamy.",
                         languages: ["python"],
                         tags: ["pygame"]
                 },
@@ -56,10 +56,10 @@ export class ProjectsService {
                         _id: 4,
                         title: "Route",
                         subtitle: "A Path Finding Algorithm Visualizer",
-                        imageUrl: "../../../../assets/images/splash.png",
+                        imageUrl: "../../../../assets/images/route-image2.png",
                         iconUrl: "../../../../assets/images/route.png",
                         link: "https://github.com/DevinLeamy/Route",
-                        text: "missing",
+                        text: "Route is a dynamic path finding algorithm visualization tool. Route allows users to compare and contrast two of the most popular algorithms for preforming searches on unweighted graphs, A* and Breadth-First-Search. In addition to displaying their behavior visually, Route records key information about each search, specifically, the number of nodes traversed and the computed shortest path. ",
                         languages: ["javascript", "html", "css"],
                         tags: ["Github Pages"]
                 }

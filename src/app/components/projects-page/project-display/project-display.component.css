@@ -56,7 +56,7 @@
 .middle-container {
         order: 1;
         width: 100%;
-        height: calc(100% - 270px);
+        height: calc(100% - 220px);
         display: flex;
 }
 
@@ -103,14 +103,22 @@
         height: 200px;
         width: 200px;
         border-radius: 5px;
-        background-size: contain;
-        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        /* border-top: 5px solid rgb(97, 207, 250);
+        border-right: 5px solid rgb(97, 207, 250);
+        border-bottom: 5px solid rgb(97, 207, 250); */
+        border: 3px solid rgb(97, 207, 250);
+        border-radius: 5px;
+        /* background-repeat: no-repeat; */
 }
 
 .link-container {
         order: 1;
         width: 100%;
-        height: 100px;
+        height: 150px;
+        display: flex;
+        align-items: center;
 }
 
 .link {
@@ -130,7 +138,8 @@
 .bottom-container {
         order: 2;
         width: 100%;
-        height: 150px;
+        height: 100px;
+        background-color: green;
 }
 
 /* Footer Container */
