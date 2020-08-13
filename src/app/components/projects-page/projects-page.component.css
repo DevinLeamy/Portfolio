@@ -46,3 +46,14 @@
         height: 250px;
         padding: 25px;
 }
+
+.project-display-container {
+        position: absolute;
+        top: calc(50% - 300px);
+        right: calc(50% - 250px);
+        width: 500px;
+        height: 600px;
+        opacity: 1;
+        z-index: -1;
+        background-color: transparent;
+}

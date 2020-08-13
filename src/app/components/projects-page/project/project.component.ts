@@ -1,6 +1,7 @@
 import { Component, Input } from "@angular/core"
 import { Project } from 'src/app/models/project.model'
 import { fadeInFromLeft } from "src/app/animations/global.animation"
+import { ProjectsService } from "../../../services/projects.service"
 
 @Component({
         selector: "app-project",
@@ -10,4 +11,5 @@ import { fadeInFromLeft } from "src/app/animations/global.animation"
 })
 export class ProjectComponent {
         @Input() project: Project
+        constructor(public projectsService: ProjectsService) {}
 }

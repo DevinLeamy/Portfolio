@@ -11,6 +11,7 @@ import { ProjectsPageComponent } from './components/projects-page/projects-page.
 import { ArrowButtonComponent } from "./components/arrow-button/arrow-button.component"
 import { ProjectComponent } from "./components/projects-page/project/project.component"
 import { TagComponent } from "./components/projects-page/project/tag/tag.component"
+import { ProjectDisplayComponent } from "./components/projects-page/project-display/project-display.component"
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { TagComponent } from "./components/projects-page/project/tag/tag.compone
     ProjectsPageComponent,
     ArrowButtonComponent,
     ProjectComponent,
-    TagComponent
+    TagComponent,
+    ProjectDisplayComponent
   ],
   imports: [
     BrowserModule,

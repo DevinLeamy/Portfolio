@@ -1,4 +1,5 @@
 export class Project {
+        _id: number
         title: string
         imageUrl: string
         link: string

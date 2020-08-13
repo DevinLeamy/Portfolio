@@ -3,17 +3,18 @@
         height: 100%;
         background-color: white;
         border-radius: 20px;
-        border-top: 3px solid white;
-        border-left: 3px solid white;
+        border-top: 3px solid black;
+        border-left: 3px solid black;
         /* border-top: 5px solid black;
         border-left: 5px solid black; */
         background-image: url("../../../../assets/splash.png");
         background-position: center center; 
 }
 
-.container:hover {
+/* .container:hover {
         border-radius: 30px;
-}
+
+} */
 
 .project-title-container {
         width: 100%;
@@ -25,12 +26,27 @@
 .project-title {
         height: 20px;
         line-height: 20px;
-        padding: 10px;
+        padding: 20px;
         background-color: black;
+        font-size: 25px;
         color: white;
         text-align: center;
-        border-radius: 5px;
+        /* border-radius: 5px; */
         margin-top: 95px;
+}
+
+.platform {
+        transform: translateY(10px);
+        width: 20px;
+        height: 5px;
+        background-color: transparent;
+        border-radius: 5px;
+}
+
+.container:hover .platform {
+        width: 100%;
+        background-color: orange;
+        /* background-color: hotpink; */
 }
 
 /* .project-title-container:hover {

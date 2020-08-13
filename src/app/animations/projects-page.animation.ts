@@ -13,14 +13,23 @@ let projectsAnimation = [
                         ),
                         query(".project-container", stagger(150, [
                                         animate("750ms cubic-bezier(0.35, 0, 0.25, 1)", keyframes([
-                                                // style({opacity: 0.3}),
-                                                // style({opacity: 0.5, transform: 'rotate(-2deg)'}),
-                                                // style({opacity: 0.7, transform: 'rotate(3deg)'}),
                                                 style({opacity: 1, transform: 'rotate(0deg)'})
                                         ]))
                                 ])
                         ),
                 ])
+        ]),
+        trigger('showProject', [
+                state('hidden', style({
+                        opacity: 0,
+                        backgroundColor: 'transparent'
+                })),
+                state('visible', style({
+                        opacity: 1,
+                        backgroundColor: 'white',
+                        zIndex: 1
+                })),
+                transition('hidden <=> visible', animate(1000))
         ])
 ]
 

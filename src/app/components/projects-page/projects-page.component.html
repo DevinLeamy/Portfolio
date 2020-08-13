@@ -3,18 +3,22 @@
                       >
         </app-arrow-button>
 </div>  
-<div class="container">
+<div  class="container">
         <div class="projects-header-container">
                 <div class="projects-header no-select">
                         What I've Made
                 </div>
         </div>
-        <div class="projects-container" [@projectsAnimation]='this.projects.length'>
-                <div class="project-container" *ngFor="let project of this.projects">
+        <div class="projects-container" [@projectsAnimation]='this.projectsService.getProjects().length'>
+                <div class="project-container" *ngFor="let project of this.projectsService.getProjects()">
                         <app-project [project]="project">
                         </app-project>
                 </div>
-               
+        </div>
+        <div class="project-display-container" [@showProject]="this.selected? 'visible':'hidden'" >
+                <app-project-display 
+                        [project]='this.projectsService.getSelectedProject()'
+                ></app-project-display>
         </div>
 </div>
 

@@ -1,56 +1,33 @@
-import { Component } from '@angular/core'
+import { Component, OnInit, OnDestroy } from '@angular/core'
 import { PageService } from "../../services/page.service"
 import { Project } from "../../models/project.model"
 import { projectsAnimation } from "../../animations/projects-page.animation"
+import { ProjectsService } from "../../services/projects.service"
+import { Subscription } from 'rxjs'
 
 @Component({
   selector: 'app-projects-page',
   templateUrl: 'projects-page.component.html',
   styleUrls: ['projects-page.component.css'],
-  animations: [projectsAnimation]
+  animations: [projectsAnimation],
+  providers: [ProjectsService]
 })
-export class ProjectsPageComponent {
-        projects: Project[] = [
-                {
-                        title: "Chess.me",
-                        imageUrl: "random",
-                        link: "random",
-                        text: "missing",
-                        languages: ["swift"],
-                        tags: ["x-code"]
-                },
-                {
-                        title: "Chess.me",
-                        imageUrl: "random",
-                        link: "random",
-                        text: "missing",
-                        languages: ["swift"],
-                        tags: ["x-code"]
-                },
-                {
-                        title: "Chess.me",
-                        imageUrl: "random",
-                        link: "random",
-                        text: "missing",
-                        languages: ["swift"],
-                        tags: ["x-code"]
-                },
-                {
-                        title: "Chess.me",
-                        imageUrl: "random",
-                        link: "random",
-                        text: "missing",
-                        languages: ["swift"],
-                        tags: ["x-code"]
-                },
-                {
-                        title: "Chess.me",
-                        imageUrl: "random",
-                        link: "random",
-                        text: "missing",
-                        languages: ["swift"],
-                        tags: ["x-code"]
-                }
-        ]
-        constructor(public pageService: PageService) {}
+export class ProjectsPageComponent implements OnInit, OnDestroy {
+        selected: boolean = false
+        selectedId: number = -1
+        selectedIdSub: Subscription
+        constructor(public pageService: PageService, public projectsService: ProjectsService) {}
+
+        ngOnInit() {
+                this.selectedIdSub = this.projectsService.getSelectedIdUpdated()
+                        .subscribe(selectedId => {
+                                this.selectedId = selectedId
+                                this.selected = this.selectedId !== -1
+                        })
+                this.projectsService.updateSelectedProjectId()
+        }
+
+        ngOnDestroy() {
+                this.selectedIdSub.unsubscribe()
+        }
 }

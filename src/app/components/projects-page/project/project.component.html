@@ -30,10 +30,11 @@
                 </div>
         </div>
 </div> -->
-<div class="container transform-border-radius">
+<div class="container transform-border-radius" (click)='this.projectsService.selectProject(this.project._id)'>
         <div class='project-title-container'>
                 <div class="project-title">
                         {{this.project.title}}
                 </div>
         </div>
+        <div class='platform transform-background-color transform-width'></div>
 </div>
