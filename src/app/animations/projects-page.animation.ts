@@ -29,7 +29,7 @@ let projectsAnimation = [
                         backgroundColor: 'white',
                         zIndex: 1
                 })),
-                transition('hidden <=> visible', animate(1000))
+                transition('hidden <=> visible', animate(0))
         ])
 ]
 

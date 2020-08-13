@@ -1,5 +1,201 @@
 .container {
         width: 100%;
         height: 100%;
-        /* background-color: white; */
+        display: flex;
+        flex-direction: column;
 }
+
+/* Top Container */
+.top-container {
+        order: 0;
+        width: 100%;
+        height: 80px;
+        display: flex;
+}
+
+.icon-container {
+        width: 80px;
+        height: 80px;
+        box-sizing: border-box;
+        /* padding: 5px; */
+        background-size: contain;
+        background-repeat: no-repeat;
+        /* border: 3px solid black; */
+        /* border-radius: 25px; */
+}
+
+.title-container {
+        width: calc(100% - 80px);
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+}
+
+.main-title {
+        order: 0;
+        height: 70px;
+        width: 100%;
+        font-size: 45px;
+        line-height: 70px;
+        text-align: center;
+        color: rgb(0, 140, 255);
+        font-family: 'life-is-okay';
+}
+
+.sub-title {
+        order: 1;
+        height: 30px;
+        width: 100%;
+        font-size: 18px;
+        text-align: center;
+        font-family: 'momcake';
+}
+
+
+/* Middle Container */
+.middle-container {
+        order: 1;
+        width: 100%;
+        height: calc(100% - 270px);
+        display: flex;
+}
+
+.middle-left-container {
+        order: 0;
+        width: 60%;
+        height: calc(100% - 20px);
+        margin-top: 20px;
+        box-sizing: border-box;
+}
+
+.readme {
+        font-family: 'momcake';
+        width: 200px;
+        font-size: 30px;
+        border-bottom: 3px solid rgb(32, 32, 32);
+}
+
+.text-body {
+        padding-top: 10px;
+        font-size: 18px;
+}
+
+.middle-right-container {
+        order: 1;
+        width: 40%;
+        height: calc(100% - 20px);
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+}
+
+.image-container {
+        order: 0;
+        width: 100%;
+        display: flex;
+        height: calc(100% - 100px);
+        align-items: center;
+}
+
+.image {
+        margin: auto;
+        height: 200px;
+        width: 200px;
+        border-radius: 5px;
+        background-size: contain;
+        background-repeat: no-repeat;
+}
+
+.link-container {
+        order: 1;
+        width: 100%;
+        height: 100px;
+}
+
+.link {
+        margin: auto;
+        order: 1;
+        height: 100px;
+        width: 100px;
+        display: block;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url("../../../../assets/images/github.png")
+}
+
+
+
+/* Bottom Container */
+.bottom-container {
+        order: 2;
+        width: 100%;
+        height: 150px;
+}
+
+/* Footer Container */
+.footer-container {
+        order: 3;
+        width: 100%;
+        height: 40px;
+        display: flex;
+}
+
+.left-button {
+        order: 0;
+        width: 30px;
+        height: 40px;
+        text-align: left;
+        line-height: 40px;
+        font-size: 20px;
+        border-radius: 5px;
+        color: gray;
+        padding-right: 10px;
+        padding-left: 10px;
+}
+
+.left-button:hover {
+        color: black;
+        background-color: rgb(238, 238, 238);
+        cursor: pointer;
+}
+
+
+.right-button {
+        order: 2;
+        width: 30px;
+        height: 40px;
+        text-align: right;
+        line-height: 40px;
+        font-size: 20px;
+        border-radius: 5px;
+        color: gray;
+        padding-right: 10px;
+        padding-left: 10px;
+}
+
+.right-button:hover {
+        color: black;
+        background-color: rgb(238, 238, 238);
+        cursor: pointer;
+}
+
+
+.exit-button {
+        order: 1;
+        width: calc(100% - 100px);
+        height: 40px;
+        color: gray;
+        text-align: center;
+        font-family: 'momcake';
+        font-size: 20px;
+        line-height: 40px;
+        border-radius: 5px;
+}
+
+.exit-button:hover {
+        color: rgb(230, 65, 0);
+        background-color: rgb(238, 238, 238);
+        cursor: pointer;
+}
+

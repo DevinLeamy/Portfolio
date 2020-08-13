@@ -1,6 +1,5 @@
-import { Component, OnInit, OnDestroy } from '@angular/core'
+import { Component, OnInit, OnDestroy, ViewChild, ElementRef } from '@angular/core'
 import { PageService } from "../../services/page.service"
-import { Project } from "../../models/project.model"
 import { projectsAnimation } from "../../animations/projects-page.animation"
 import { ProjectsService } from "../../services/projects.service"
 import { Subscription } from 'rxjs'
@@ -13,6 +12,7 @@ import { Subscription } from 'rxjs'
   providers: [ProjectsService]
 })
 export class ProjectsPageComponent implements OnInit, OnDestroy {
+        @ViewChild('container') container: ElementRef
         selected: boolean = false
         selectedId: number = -1
         selectedIdSub: Subscription
@@ -23,6 +23,10 @@ export class ProjectsPageComponent implements OnInit, OnDestroy {
                         .subscribe(selectedId => {
                                 this.selectedId = selectedId
                                 this.selected = this.selectedId !== -1
+                                if (this.container !== undefined && this.container !== null) {
+                                        if (this.selected) this.container.nativeElement.style.opacity = 0.5
+                                        else this.container.nativeElement.style.opacity = 1
+                                }
                         })
                 this.projectsService.updateSelectedProjectId()
         }

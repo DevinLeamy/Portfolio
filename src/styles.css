@@ -7,7 +7,7 @@ body, html {
 }
 
 body {
-        font-family: Roboto, Arial, sans-serif;
+        font-family: 'poppins-medium';
         background-color: rgb(29, 31, 36);
 }
 /* Make scroll bar invisible */
@@ -52,6 +52,37 @@ select:focus {
 
 app-arrow-button:focus {
         outline: 0;
+}
+
+/* Fonts */
+@font-face {
+        font-family: 'life-is-okay';
+        src: url(src/assets/fonts/life-is-okay-font/LifeIsOkay-PzAE.ttf);
+        font-style: normal;
+}
+
+@font-face {
+        font-family: 'momcake';
+        src: url(src/assets/fonts/momcake-font/MomcakeBold-WyonA.otf);
+        font-style: normal;
+}
+
+@font-face {
+        font-family: 'poppins-regular';
+        src: url(src/assets/fonts/poppins/Poppins-Regular.ttf);
+        font-style: normal;
+}
+
+@font-face {
+        font-family: 'poppins-medium';
+        src: url(src/assets/fonts/poppins/Poppins-Medium.ttf);
+        font-style: normal;
+}
+
+@font-face {
+        font-family: 'poppins-semibold';
+        src: url(src/assets/fonts/poppins/Poppins-SemiBold.ttf);
+        font-style: normal;
 }
 
 /* Transforms */

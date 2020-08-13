@@ -3,7 +3,7 @@
                       >
         </app-arrow-button>
 </div>  
-<div  class="container">
+<div  class="container" #container>
         <div class="projects-header-container">
                 <div class="projects-header no-select">
                         What I've Made
@@ -15,10 +15,8 @@
                         </app-project>
                 </div>
         </div>
-        <div class="project-display-container" [@showProject]="this.selected? 'visible':'hidden'" >
-                <app-project-display 
-                        [project]='this.projectsService.getSelectedProject()'
-                ></app-project-display>
-        </div>
+</div>
+<div class="project-display-container" [@showProject]="this.selected? 'visible':'hidden'" >
+        <app-project-display *ngIf='this.selected'></app-project-display>
 </div>
 

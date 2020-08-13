@@ -29,7 +29,9 @@
         font-size: 40px;
         color: white;
         padding: 10px;
-        border-bottom: 2px solid hotpink;
+        border-bottom: 5px solid hotpink;
+        font-family: 'poppins-medium';
+        border-radius: 5px;
 }
 
 .projects-container {
@@ -49,11 +51,14 @@
 
 .project-display-container {
         position: absolute;
-        top: calc(50% - 300px);
-        right: calc(50% - 250px);
-        width: 500px;
-        height: 600px;
+        top: calc(50% - 325px);
+        right: calc(50% - 275px);
+        width: 550px;
+        height: 650px;
         opacity: 1;
         z-index: -1;
         background-color: transparent;
+        box-sizing: border-box;
+        padding: 10px;
+        border-radius: 10px;
 }

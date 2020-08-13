@@ -1,3 +1,35 @@
-<div class='container' (click)='this.projectsService.selectProject(-1)'>
-        <div>{{this.project._id}}</div>
+<div class='container'>
+        <div class="top-container">
+                <div class='icon-container' #iconContainer></div>
+                <div class='title-container' *ngIf="this.selectedProject !== undefined && this.selectedProject !== null">
+                        <div class='main-title'>{{this.selectedProject.title}}</div>
+                        <div class='sub-title'>{{this.selectedProject.subtitle}}</div>
+                </div>
+        </div>
+        <div class='middle-container'>
+                <div class='middle-left-container'>
+                        <div class='readme'>README.md</div>
+                        <div class='text-body'>{{this.selectedProject.text}}</div>
+                </div>
+                <div class='middle-right-container'>
+                        <div class='image-container'>
+                                <div class='image' #imageContainer></div>
+                        </div>
+                        <div class='link-container'>
+                                <a class='link' [href]='this.selectedProject.link'></a>   
+                        </div>
+                        
+                </div>
+        </div>
+        <div class='bottom-container'></div>
+        <div class='footer-container'>
+                <div class="left-button transform-color transform-background-color no-select" (click)="goToLeftProject()">◀&#xFE0E;</div>
+                <div class="exit-button transform-background-color transform-color no-select" (click)="exitProjectsDisplay()">exit</div>
+                <div class="right-button transform-color transform-background-color no-select" (click)="goToRightProject()">▶&#xFE0E;</div>
+        </div>
 </div>
+ <!-- Main container background is gif and image -->
+<!-- Top Container has icon, title and sub title -->
+<!-- Middle container has text, image and github link-->
+<!-- Bottom container has languages and tags-->
+<!-- Footer container has arrows and exit button -->
