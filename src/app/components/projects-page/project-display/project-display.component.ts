@@ -2,6 +2,9 @@ import { Component, OnInit, ViewChild, ElementRef, OnDestroy, AfterViewInit } fr
 import { Project } from "../../../models/project.model"
 import { ProjectsService } from "../../../services/projects.service"
 import { Subscription } from 'rxjs'
+import { TagsService } from '../../../services/tags.service'
+import { TechnologyTag } from 'src/app/models/technology-tag.model'
+import { LanguageTag } from 'src/app/models/language-tag.model'
 
 @Component({
         selector: "app-project-display",
@@ -13,7 +16,7 @@ export class ProjectDisplayComponent implements OnInit, OnDestroy, AfterViewInit
         @ViewChild("imageContainer") imageContainer: ElementRef
         selectedProject: Project
         selectedProjectIdSub: Subscription
-        constructor(public projectsService: ProjectsService) {}
+        constructor(public projectsService: ProjectsService, public tagsService: TagsService) {}
         
         ngOnInit() {
                 this.selectedProjectIdSub = this.projectsService.getSelectedIdUpdated()
@@ -54,6 +57,33 @@ export class ProjectDisplayComponent implements OnInit, OnDestroy, AfterViewInit
         exitProjectsDisplay() {
                 this.projectsService.selectProject(-1)
         }
+
+        //Gets tech tag objects from project tech tags
+        getTechTags() {
+                var techTags: TechnologyTag[] = []
+                for (var i = 0; i < this.selectedProject.tech.length; i++) {
+                        const tagName = this.selectedProject.tech[i]
+                        const techTag = this.tagsService.getTechTag(tagName)
+                        if (techTag !== null && techTag !== undefined) {
+                                techTags.push(techTag)
+                        }
+                }
+                return techTags
+        }
+
+        //Gets langauge tag objects from project language tags
+        getLanguageTags() {
+                var languageTags: LanguageTag[] = []
+                for (var i = 0; i < this.selectedProject.languages.length; i++) {
+                        const tagName = this.selectedProject.languages[i]
+                        const langTag = this.tagsService.getLanguageTag(tagName)
+                        if (langTag !== null && langTag !== undefined) {
+                                languageTags.push(langTag)
+                        }
+                }
+                return languageTags
+        }
+
 
         ngOnDestroy() {
                 this.selectedProjectIdSub.unsubscribe()

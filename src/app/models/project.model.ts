@@ -7,5 +7,5 @@ export class Project {
         link: string
         text: string
         languages: string[]
-        tags: string[]
+        tech: string[]
 }

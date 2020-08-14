@@ -16,12 +16,30 @@
                                 <div class='image' #imageContainer></div>
                         </div>
                         <div class='link-container'>
-                                <a class='link' [href]='this.selectedProject.link'></a>   
+                                <a class='link transform-background-color' [href]='this.selectedProject.link'></a>   
                         </div>
                         
                 </div>
         </div>
-        <div class='bottom-container'></div>
+        <div class='bottom-container'>
+                <div class='lang-tags-container'>
+                        <!-- <div class='lang-tags-text'>Languages:</div> -->
+                        <div class='lang-tags'>
+                                <div class='lang-tag' *ngFor='let tag of getLanguageTags()'>
+                                        <app-image-tag [text]='tag.text' [imageUrl]='tag.imageUrl'></app-image-tag>
+                                </div>
+                        </div>
+                </div>
+                <div class='tech-tags-container'>
+                        <!-- <div class='tech-tags-text'>Tech:</div> -->
+                        <div class='tech-tags'>
+                                <div class='tech-tag' *ngFor="let tag of getTechTags()">
+                                        <app-image-tag [text]='tag.text' [imageUrl]='tag.imageUrl'></app-image-tag>
+                                </div>
+                        </div>
+                </div>
+                
+        </div>
         <div class='footer-container'>
                 <div class="left-button transform-color transform-background-color no-select" (click)="goToLeftProject()">◀&#xFE0E;</div>
                 <div class="exit-button transform-background-color transform-color no-select" (click)="exitProjectsDisplay()">exit</div>

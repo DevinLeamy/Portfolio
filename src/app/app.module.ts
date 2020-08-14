@@ -12,6 +12,7 @@ import { ArrowButtonComponent } from "./components/arrow-button/arrow-button.com
 import { ProjectComponent } from "./components/projects-page/project/project.component"
 import { TagComponent } from "./components/projects-page/project/tag/tag.component"
 import { ProjectDisplayComponent } from "./components/projects-page/project-display/project-display.component"
+import { ImageTagComponent } from './components/projects-page/image-tag/image-tag.component'
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ProjectDisplayComponent } from "./components/projects-page/project-disp
     ArrowButtonComponent,
     ProjectComponent,
     TagComponent,
-    ProjectDisplayComponent
+    ProjectDisplayComponent,
+    ImageTagComponent
   ],
   imports: [
     BrowserModule,
