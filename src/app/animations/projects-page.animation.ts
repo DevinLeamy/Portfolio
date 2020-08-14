@@ -29,7 +29,37 @@ let projectsAnimation = [
                         backgroundColor: 'white',
                         zIndex: 1
                 })),
-                transition('hidden <=> visible', animate(0))
+                state('visibleAgain', style({
+                        opacity: 1,
+                        backgroundColor: 'white',
+                        zIndex: 1
+                })),
+                transition('hidden => visible, hidden => visibleAgain, visible <=> visibleAgain', [
+                        query('.icon-container, .middle-left-container, .lang-tags-container', [
+                                style({
+                                        transform: 'translateX(-200px)',
+                                        opacity: '0'
+                                })
+                        ]),
+                        query('.title-container, .image-container, .link-text, .link, .tech-tags-container', [
+                                style({
+                                        transform: 'translateX(200px)',
+                                        opacity: '0'
+                                })
+                        ]),
+                        animate(200, style({
+                                opacity: 1,
+                                backgroundColor: 'white',
+                                zIndex: 1
+                        })),
+                        query('.icon-container, .middle-left-container, .lang-tags-container, .tech-tags-container, .title-container, .image-container, .link-text, .link', [
+                                stagger(150, animate(200, style({
+                                        transform: 'translateX(0px)',
+                                        opacity: '1'
+                                })))
+                        ])
+                ]),
+                transition('visible => hidden', animate(200)),
         ]),
         trigger('showTooltip', [
                 state('hidden', style({
@@ -41,7 +71,7 @@ let projectsAnimation = [
                         zIndex: 100
                 })),
                 transition('hidden => visible', animate(50)),
-                transition('visible => hidden', animate(0))
+                transition('visible => hidden', animate(0)),
         ])
 ]
 

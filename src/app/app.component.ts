@@ -16,7 +16,7 @@ export class AppComponent implements OnInit, OnDestroy {
         rightExpandedSub: Subscription
         leftExpanded: boolean = false
         rightExpanded: boolean = false
-        title: string = 'awesome-personal-website'
+        title: string = 'devinleamy'
         constructor(public pageService: PageService) {}
         
         ngOnInit() {

@@ -62,7 +62,8 @@
 
 .middle-left-container {
         order: 0;
-        width: 60%;
+        width: calc(60% - 3px);
+        margin-right: 3px;
         height: calc(100% - 20px);
         margin-top: 20px;
         box-sizing: border-box;
@@ -119,23 +120,42 @@
         height: 150px;
         display: flex;
         align-items: center;
+        flex-direction: column;
+}
+
+.link-text {
+        order: 0;
+        margin: auto;
+        font-family: 'momcake';
+        width: 100%;
+        font-size: 20px;
+        border-bottom: 3px solid rgb(32, 32, 32);
 }
 
 .link {
-        margin: auto;
         order: 1;
+        /* margin: auto; */
+        width: 100%;
         height: 100px;
-        width: 100px;
         display: block;
-        background-size: cover;
+        background-size: contain;
         background-repeat: no-repeat;
-        background-image: url("../../../../assets/images/github.png")
+        background-image: url("../../../../assets/images/github2.png");
 }
-/* 
-.link:hover {
-        background-color: rgb(0, 255, 64);
-} */
 
+.link-platform {
+        position: relative;
+        transform: translateY(100px);
+        width: 20px;
+        height: 5px;
+        background-color: transparent;
+        border-radius: 5px;
+}
+
+.link:hover .link-platform {
+        width: 100%;
+        background-color: rgb(88, 218, 88);
+}
 
 /* Bottom Container */
 .bottom-container {
@@ -149,8 +169,10 @@
 .tech-tags-container {
         width: 100%;
         height: 50%;
+        /* height: 100%;
+        width: 50%; */
         display: flex;
-        align-items: center;
+        /* align-items: center; */
 }
 
 /* .tech-tags-text {
@@ -163,6 +185,7 @@
         height: 100%;
         width: 100%;
         display: flex;
+        flex-direction: row-reverse;
 }
 
 .tech-tag {
@@ -174,6 +197,8 @@
 .lang-tags-container {
         width: 100%;
         height: 50%;
+        /* height: 100%;
+        width: 50%; */
         display: flex;
 }
 

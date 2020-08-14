@@ -16,7 +16,10 @@
                                 <div class='image' #imageContainer></div>
                         </div>
                         <div class='link-container'>
-                                <a class='link transform-background-color' [href]='this.selectedProject.link'></a>   
+                                <div class='link-text'>See Code on Github</div>
+                                <a class='link' [href]='this.selectedProject.link'>
+                                        <div class='link-platform transform-width'></div>
+                                </a>   
                         </div>
                         
                 </div>

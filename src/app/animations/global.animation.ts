@@ -46,14 +46,14 @@ let pageSlide = [
                                         top: 0
                                 }),
                         ]),
-                        query(".project-container", [
+                        query(".projects-header, .project-container", [
                                 stagger(100, [
                                         animate(200, style({
                                                 opacity: 0,
                                                 width: 0,
                                                 height: 0,
                                                 borderRadius: 5,
-                                                transform: 'translateX(500px) translateY(500px) rotate(360deg)'
+                                                transform: 'translateX(500px) translateY(500px) rotate(270deg)'
                                         }))
                                 ])
                         ],{optional: true}),

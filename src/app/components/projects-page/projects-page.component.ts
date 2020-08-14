@@ -16,6 +16,7 @@ export class ProjectsPageComponent implements OnInit, OnDestroy {
         selected: boolean = false
         selectedId: number = -1
         selectedIdSub: Subscription
+        visibleAgain = false
         constructor(public pageService: PageService, public projectsService: ProjectsService) {}
 
         ngOnInit() {
@@ -23,6 +24,7 @@ export class ProjectsPageComponent implements OnInit, OnDestroy {
                         .subscribe(selectedId => {
                                 this.selectedId = selectedId
                                 this.selected = this.selectedId !== -1
+                                if (this.selected) this.visibleAgain = !this.visibleAgain
                                 if (this.container !== undefined && this.container !== null) {
                                         if (this.selected) this.container.nativeElement.style.opacity = 0.5
                                         else this.container.nativeElement.style.opacity = 1

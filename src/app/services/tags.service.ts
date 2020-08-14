@@ -107,7 +107,7 @@ export class TagsService {
                 {
                         _id: 8,
                         text: 'Pygame',
-                        imageUrl: '../../../../assets/images/pygame.png'
+                        imageUrl: '../../../../assets/images/pygame2.png'
                 },
                 {
                         _id: 9,

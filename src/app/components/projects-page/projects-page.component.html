@@ -18,7 +18,9 @@
                 </div>
         </div>
 </div>
-<div class="project-display-container" [@showProject]="this.selected? 'visible':'hidden'" >
+<!-- visible and visibleAgain change based on this.visibleAgain. this.visibleAgain changed whenever this.selectedProjectId changes. -->
+<!-- The purpose of visible and visibleAgain is a ensure that when changing between projects the slide-in animation is always preformed -->
+<div class="project-display-container" [@showProject]="this.selected? (this.visibleAgain? 'visible':'visibleAgain'):'hidden'" >
         <app-project-display *ngIf='this.selected'></app-project-display>
 </div>
 

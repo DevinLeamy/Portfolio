@@ -42,6 +42,7 @@ export class ProjectDisplayComponent implements OnInit, OnDestroy, AfterViewInit
                 const numberOfProject = this.projectsService.projects.length
                 var newProjectId = currentId - 1
                 newProjectId = newProjectId == -1? numberOfProject-1 : newProjectId
+                this.exitProjectsDisplay()
                 this.projectsService.selectProject(newProjectId)
         }
         

@@ -10,15 +10,16 @@ export class ProjectsService {
         projects: Project[] = [
                 {
                         _id: 0,
-                        title: "Chess.me",
-                        subtitle: "A Mobile Chess App",
-                        imageUrl: "../../../../assets/images/chess-image.png",
-                        iconUrl: "../../../../assets/images/chess-me.png",
-                        link: "https://github.com/DevinLeamy/Chess.me",
-                        text: "I brought the offical game of coffee tables around the world to the iPhone with Chess.me. Chess.me is a unique mobile chess app that support three engaging game modes, namely, .COUPLE: pass-and-play chess, .BLUETOOTH: local wireless chess with friends and, .ME: a single player, challenging, gamemode that puts players up against an infinitly clever Chess AI.",
-                        languages: ["Swift"],
-                        tech: ["Xcode"]
+                        title: "Pacman",
+                        subtitle: "The 80's Classic 'Pacman'",
+                        imageUrl: "../../../../assets/images/pacman-image2.png",
+                        iconUrl: "../../../../assets/images/pacman-ghost.png",
+                        link: "https://github.com/DevinLeamy/Pacman",
+                        text: "I made an accurate recreation of the game that was once loved, is universally known and, that stands as a hallmark of the arcade-game era of the 80's. Pacman. This recreation is complete with a splash screen, four AI ghosts, animations, sounds, fruits and, progressively more challenging levels. Additionally, I logged it's development on Youtube @devinleamy.",
+                        languages: ["Python"],
+                        tech: ["Pygame"]
                 },
+                
                 {
                         _id: 1,
                         title: "DDM - Rumble",
@@ -43,14 +44,14 @@ export class ProjectsService {
                 },
                 {
                         _id: 3,
-                        title: "Pacman",
-                        subtitle: "The 80's Classic 'Pacman'",
-                        imageUrl: "../../../../assets/images/pacman-image2.png",
-                        iconUrl: "../../../../assets/images/pacman-ghost.png",
-                        link: "https://github.com/DevinLeamy/Pacman",
-                        text: "I made an accurate recreation of the game that was once loved, is univerally known and, stands as a hallmark of the arcade-game era of the 80's, Pacman. This recreation is complete with a splash screen, four AI ghosts, animations, sounds, fruits and, progressively more challenging levels. Additionally, I logged it's development on Youtube @devinleamy.",
-                        languages: ["Python"],
-                        tech: ["Pygame"]
+                        title: "Chess.me",
+                        subtitle: "A Mobile Chess App",
+                        imageUrl: "../../../../assets/images/chess-image.png",
+                        iconUrl: "../../../../assets/images/chess-me.png",
+                        link: "https://github.com/DevinLeamy/Chess.me",
+                        text: "I brought the offical game of coffee tables around the world to the iPhone with Chess.me. Chess.me is a unique mobile chess app that support three engaging game modes, namely, .COUPLE: pass-and-play chess, .BLUETOOTH: local wireless chess with friends and, .ME: a challenging gamemode that puts players up against an infinitly clever Chess AI.",
+                        languages: ["Swift"],
+                        tech: ["Xcode"]
                 },
                 {
                         _id: 4,
