@@ -30,6 +30,18 @@ let projectsAnimation = [
                         zIndex: 1
                 })),
                 transition('hidden <=> visible', animate(0))
+        ]),
+        trigger('showTooltip', [
+                state('hidden', style({
+                        opacity: 0,
+                        zIndex: -100
+                })),
+                state('visible', style({
+                        opacity: 1,
+                        zIndex: 100
+                })),
+                transition('hidden => visible', animate(50)),
+                transition('visible => hidden', animate(0))
         ])
 ]
 

@@ -1,2 +1,3 @@
-<div class="container" #container ngbTooltip="Tooltip on top" placement='top'>
+<div class="container" (mouseover)="this.hovering = true" (mouseout)="this.hovering = false" #container>
+        <div class='tooltip transform-opacity' [@showTooltip]="this.hovering? 'visible':'hidden'">{{this.text}}</div>
 </div>
