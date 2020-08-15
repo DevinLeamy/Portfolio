@@ -12,8 +12,7 @@
                 </div>
                 <div class="projects-container" [@projectsAnimation]='this.projectsService.getProjects().length'>
                         <div class="project-container" *ngFor="let project of this.projectsService.getProjects()">
-                                <app-project [project]="project">
-                                </app-project>
+                                <app-project [project]="project"></app-project>
                         </div>
                 </div>
         </div>
