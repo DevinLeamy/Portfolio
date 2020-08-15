@@ -17,11 +17,8 @@
         width: 80px;
         height: 80px;
         box-sizing: border-box;
-        /* padding: 5px; */
         background-size: contain;
         background-repeat: no-repeat;
-        /* border: 3px solid black; */
-        /* border-radius: 25px; */
 }
 
 .title-container {
@@ -105,13 +102,9 @@
         width: 200px;
         border-radius: 5px;
         background-position: center center;
-        background-size: cover;
-        /* border-top: 5px solid rgb(97, 207, 250);
-        border-right: 5px solid rgb(97, 207, 250);
-        border-bottom: 5px solid rgb(97, 207, 250); */
-        border: 3px solid rgb(97, 207, 250);
+        border-top: 3px solid rgb(97, 207, 250);
+        border-right: 3px solid rgb(97, 207, 250);
         border-radius: 5px;
-        /* background-repeat: no-repeat; */
 }
 
 .link-container {
