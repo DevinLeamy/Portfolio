@@ -8,8 +8,11 @@
 
         box-sizing: border-box;
         border: 3px solid white;
-        background-color: rgb(29, 31, 36);
+        /* background-color: rgb(29, 31, 36); */
         border-radius: 10px;
+
+        /* background-image: url("../../../assets/images/splash2.jpg"); */
+        background-size: cover;
 }
 
 .side-button-container {
