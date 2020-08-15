@@ -3,14 +3,14 @@
                       >
         </app-arrow-button>
 </div>  
-<div  class="container" #container>
+<div  class="container" #container [@projectsAnimation]='this.projectsService.getProjects().length'>
         <div class='sub-container'>
                 <div class="projects-header-container">
                         <div class="projects-header no-select">
                                 What I've Made
                         </div>
                 </div>
-                <div class="projects-container" [@projectsAnimation]='this.projectsService.getProjects().length'>
+                <div class="projects-container" >
                         <div class="project-container" *ngFor="let project of this.projectsService.getProjects()">
                                 <app-project [project]="project"></app-project>
                         </div>

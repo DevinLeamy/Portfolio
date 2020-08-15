@@ -53,7 +53,8 @@ let pageSlide = [
                                                 width: 0,
                                                 height: 0,
                                                 borderRadius: 5,
-                                                transform: 'translateX(500px) translateY(500px) rotate(270deg)'
+                                                // transform: 'translateX(500px) translateY(500px) rotate(270deg)'
+                                                transform: 'translateY(500px)'
                                         }))
                                 ])
                         ],{optional: true}),
@@ -90,7 +91,7 @@ let pageSlide = [
                         ])
                 ]),
                 transition('AboutPage => SplashPage, SplashPage => ProjectPage', [
-                         query(".project-container", 
+                         query(".project-container, .projects-header", 
                                 style({
                                         opacity: 0,
                                         transform: 'translateY(-200px)'
@@ -147,7 +148,7 @@ let pageSlide = [
                                         left: 0
                                 }))
                         ]),
-                        query(".project-container", stagger(150, [
+                        query(".project-container, .projects-header", stagger(150, [
                                         animate("500ms cubic-bezier(0.35, 0, 0.25, 1)", keyframes([
                                                 style({opacity: 1, transform: 'rotate(0deg)'})
                                         ]))

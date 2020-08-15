@@ -4,14 +4,14 @@ import { trigger, state, style, transition, animate, stagger, query, animateChil
 let projectsAnimation = [
         trigger('projectsAnimation', [
                 transition(":enter", [
-                        query(".project-container", 
+                        query(".project-container, .projects-header", 
                                 style({
                                         opacity: 0,
                                         transform: 'translateY(-200px)'
                                 }),
                                 { optional: true}  
                         ),
-                        query(".project-container", stagger(150, [
+                        query(".project-container, .projects-header", stagger(150, [
                                         animate("750ms cubic-bezier(0.35, 0, 0.25, 1)", keyframes([
                                                 style({opacity: 1, transform: 'rotate(0deg)'})
                                         ]))
