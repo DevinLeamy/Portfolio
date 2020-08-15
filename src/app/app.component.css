@@ -4,3 +4,12 @@
         height: 100%;
         overflow: hidden;
 }
+
+.logo {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        color: rgb(241, 241, 241);
+        font-family: 'momcake';
+        font-size: 30px;
+}
