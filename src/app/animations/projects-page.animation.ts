@@ -53,7 +53,7 @@ let projectsAnimation = [
                                 zIndex: 1
                         })),
                         query('.icon-container, .middle-left-container, .lang-tags-container, .tech-tags-container, .title-container, .image-container, .link-text, .link', [
-                                stagger(150, animate(200, style({
+                                stagger(100, animate(200, style({
                                         transform: 'translateX(0px)',
                                         opacity: '1'
                                 })))

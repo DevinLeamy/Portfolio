@@ -12,10 +12,10 @@
 
 .app-button:hover {
         width: 30px;
-        height: 30px;
+        height: 35px;
         background-color: rgb(47, 53, 54);
-        line-height: 30px;
-        font-size: 30px;
+        line-height: 35px;
+        font-size: 35px;
         opacity: 1;
         cursor: pointer;
 }
