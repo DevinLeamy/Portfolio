@@ -20,10 +20,10 @@
 </div>
 <!-- visible and visibleAgain change based on this.visibleAgain. this.visibleAgain changed whenever this.selectedProjectId changes. -->
 <!-- The purpose of visible and visibleAgain is a ensure that when changing between projects the slide-in animation is always preformed -->
-<div class="project-display-container" fxShow="true" fxHide.lt-md="true" [@showProject]="this.selected? (this.visibleAgain? 'visible':'visibleAgain'):'hidden'" >
+<div class="project-display-container" *ngIf="this.media.isActive('gt-sm')" fxShow="true" fxHide.lt-md="true" [@showProject]="this.selected? (this.visibleAgain? 'visible':'visibleAgain'):'hidden'" >
         <app-project-display *ngIf='this.selected'></app-project-display>
 </div>
 
-<div class="project-display-container-small" *ngIf='false' fxShow="true" fxHide.gt-sm="true" [@showProject]="this.selected? (this.visibleAgain? 'visible':'visibleAgain'):'hidden'" >
+<div class="project-display-container-small" *ngIf="this.media.isActive('lt-md')" fxShow="true" fxHide.gt-sm="true" [@showProject]="this.selected? (this.visibleAgain? 'visible':'visibleAgain'):'hidden'" >
         <app-project-display *ngIf='this.selected'></app-project-display>
 </div>

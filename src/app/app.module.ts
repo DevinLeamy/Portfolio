@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser'
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations"
 import { NgModule } from '@angular/core'
 import { AppRoutingModule } from './app-routing.module'
+import { FlexLayoutModule } from '@angular/flex-layout'
 
 import { AppComponent } from './app.component'
 import { SplashPageComponent } from './components/splash-page/splash-page.component'
@@ -30,7 +31,8 @@ import { ImageTagComponent } from './components/projects-page/image-tag/image-ta
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

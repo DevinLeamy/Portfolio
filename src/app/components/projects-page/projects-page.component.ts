@@ -3,6 +3,7 @@ import { PageService } from "../../services/page.service"
 import { projectsAnimation } from "../../animations/projects-page.animation"
 import { ProjectsService } from "../../services/projects.service"
 import { Subscription } from 'rxjs'
+import { MediaObserver } from '@angular/flex-layout'
 
 @Component({
   selector: 'app-projects-page',
@@ -17,7 +18,7 @@ export class ProjectsPageComponent implements OnInit, OnDestroy {
         selectedId: number = -1
         selectedIdSub: Subscription
         visibleAgain = false
-        constructor(public pageService: PageService, public projectsService: ProjectsService) {}
+        constructor(public pageService: PageService, public projectsService: ProjectsService, public media: MediaObserver) {}
 
         ngOnInit() {
                 this.selectedIdSub = this.projectsService.getSelectedIdUpdated()
