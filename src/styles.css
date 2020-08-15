@@ -9,8 +9,8 @@ body, html {
 body {
         font-family: 'poppins-medium';
         background-color: rgb(29, 31, 36);
-        background-image: url("assets/images/splash2.jpg");
         background-size: cover;
+        background-position: center center;
 }
 /* Make scroll bar invisible */
 ::-webkit-scrollbar {

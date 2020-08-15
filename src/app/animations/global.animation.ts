@@ -59,7 +59,7 @@ let pageSlide = [
                                 ])
                         ],{optional: true}),
                         query(':leave', [
-                                animate(400, style({
+                                animate(200, style({
                                         height: '500px',
                                         width: '500px',
                                         left: 'calc(50% - 250px)',
@@ -69,7 +69,7 @@ let pageSlide = [
                         ]),
                         group([
                                 query(":enter", [
-                                        animate('400ms ease', style({
+                                        animate('200ms ease', style({
                                                 left: 'calc(50% - 250px)',
                                                 opacity: 1
                                         }))
@@ -82,7 +82,7 @@ let pageSlide = [
                                 ])
                         ]),
                         query(":enter", [
-                                animate('300ms ease', style({
+                                animate('150ms ease', style({
                                         width: "100%",
                                         height: "100%",
                                         top: 0,
@@ -118,7 +118,7 @@ let pageSlide = [
                                 }),
                         ]),
                         query(':leave', [
-                                animate(400, style({
+                                animate(200, style({
                                         height: '500px',
                                         width: '500px',
                                         left: 'calc(50% - 250px)',
@@ -128,7 +128,7 @@ let pageSlide = [
                         ]),
                         group([
                                 query(":enter", [
-                                        animate('400ms ease', style({
+                                        animate('200ms ease', style({
                                                 left: 'calc(50% - 250px)',
                                                 opacity: 1
                                         }))
@@ -141,7 +141,7 @@ let pageSlide = [
                                 ])
                         ]),
                         query(":enter", [
-                                animate('300ms ease', style({
+                                animate('150ms ease', style({
                                         width: "100%",
                                         height: "100%",
                                         top: 0,

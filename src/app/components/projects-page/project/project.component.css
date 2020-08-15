@@ -48,6 +48,6 @@
 
 .container:hover .platform {
         width: 100%;
-        background-color: orange;
+        background-color: rgb(88, 88, 88);
         /* background-color: hotpink; */
 }

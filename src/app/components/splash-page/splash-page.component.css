@@ -15,6 +15,12 @@
         background-size: cover;
 }
 
+.sub-container {
+        max-width: 1050px;
+        width: 100%;
+        
+}
+
 .side-button-container {
         position: absolute;
         display: flex;
