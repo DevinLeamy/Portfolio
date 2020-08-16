@@ -42,7 +42,8 @@
         font-size: 40px;
         color: white;
         padding: 10px;
-        border-bottom: 3px solid hotpink;
+        border-bottom: 3px solid rgb(253, 0, 127);
+        /* border-bottom: 3px solid hotpink; */
         font-family: 'poppins-medium';
         border-radius: 5px;
 }

@@ -27,7 +27,7 @@ export class ProjectsPageComponent implements OnInit, OnDestroy {
                                 this.selected = this.selectedId !== -1
                                 if (this.selected) this.visibleAgain = !this.visibleAgain
                                 if (this.container !== undefined && this.container !== null) {
-                                        if (this.selected) this.container.nativeElement.style.opacity = 0.5
+                                        if (this.selected) this.container.nativeElement.style.opacity = 0 //0.5
                                         else this.container.nativeElement.style.opacity = 1
                                 }
                         })

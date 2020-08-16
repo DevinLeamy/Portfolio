@@ -12,6 +12,31 @@
         border-radius: 10px;
 }
 
+.sub-container {
+        margin: auto;
+        max-width: 1050px;
+        width: 100%;
+
+}
+
+.header-container {
+        width: 100%;
+        display: flex; 
+        justify-content: center;
+        margin: auto;
+}
+
+.header {
+        margin-top: 70px;
+        font-size: 40px;
+        color: white;
+        padding: 10px;
+        /* border-bottom: 3px solid hotpink; */
+        /* border-bottom: 3px solid rgb(253, 0, 127); */
+        font-family: 'poppins-medium';
+        border-radius: 5px;
+}
+
 .side-button-container {
         position: absolute;
         display: flex;

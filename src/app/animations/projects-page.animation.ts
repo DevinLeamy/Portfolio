@@ -1,6 +1,5 @@
 import { trigger, state, style, transition, animate, stagger, query, animateChild, animation, group, keyframes } from "@angular/animations"
 
-
 let projectsAnimation = [
         trigger('projectsAnimation', [
                 transition(":enter", [
