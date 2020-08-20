@@ -37,6 +37,21 @@
         border-radius: 5px;
 }
 
+
+.info-container {
+        width: 100%;
+        max-width: 1050px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+}
+
+.who-i-am-container {
+        width: 250px;
+        height: 300px;
+}
+
 .side-button-container {
         position: absolute;
         display: flex;
