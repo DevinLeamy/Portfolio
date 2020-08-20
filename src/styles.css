@@ -121,6 +121,20 @@ app-arrow-button:focus {
         transition: width 0.2s;
 }
 
+.tranform-blur {
+        -webkit-transition: filter 0.2s;
+        -moz-transition: filter 0.2s;
+        -o-transition: filter 0.2s;
+        transition: filter 0.2s;
+}
+
+.tranform-webkit-filter {
+        -webkit-transition: -webkit-filter 0.2s;
+        -moz-transition: -webkit-filter 0.2s;
+        -o-transition: -webkit-filter 0.2s;
+        transition: -webkit-filter 0.2s;
+}
+
 .transform-height {
         -webkit-transition: height 0.2s;
         -moz-transition: height 0.2s;
@@ -156,4 +170,21 @@ app-arrow-button:focus {
         -moz-user-select: none; 
         -ms-user-select: none; 
         user-select: none;
+}
+
+/* Remove default style from links */
+a:link {
+        text-decoration: none;
+}
+      
+a:visited {
+        text-decoration: none;
+}
+
+a:hover {
+        text-decoration: none;
+}
+
+a:active {
+        text-decoration: none;
 }

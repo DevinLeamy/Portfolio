@@ -47,7 +47,11 @@
         flex-wrap: wrap;
 }
 
-.me-container {
+.bottom-container {
+        margin-top: 10px;
+}
+
+.top-container {
         width: 350px;
         height: 400px;
         box-sizing: border-box;
@@ -58,20 +62,25 @@
         border-radius: 5px;
 }
 
-.me-header {
+.right-container {
+        margin-left: 10px;
+        padding: 0px;
+}
+
+.top-header {
         width: 100%;
         height: 40px;
         font-family: 'poppins-medium';
         font-size: 20px;
 }
 
-.me-school-container {
+.school-container {
         width: 100%;
         height: 80px;
         display: flex;
 }
 
-.me-school-icon {
+.school-icon {
         width: 80px;
         height: 80px;
         transform: translateX(5px) translateY(-5px);
@@ -82,17 +91,17 @@
 
 }
 
-.me-school-text-container {
+.school-text-container {
         width: calc(100% - 90px);
         height: 80px;
 }
 
-.me-school-text {
+.school-text {
         text-align: center;
         font-size: 16px;
 }
 
-.me-traits-container {
+.traits-container {
         width: 100%;
         height: calc(100% - 120px);
         display: flex;
@@ -105,7 +114,6 @@
         display: flex;
         box-sizing: border-box;
         border-radius: 5px;
-        /* border-bottom: 4px solid rgb(0, 140, 255); */
         border-bottom: 4px solid grey;
         margin-bottom: 13px;
 }
@@ -149,9 +157,110 @@
         background-image: url("../../../assets/images/conscientious2.png");  
 }
 
+/* Middle container */
+.middle-container {
+        width: 710px;
+        height: 250px;
+        background-color: white;
+        border-radius: 5px;
+        box-sizing: border-box;
+        padding: 10px;
+}
+
+.middle-top-container {
+        width: 100%;
+        height: 40px;
+}
+
+.middle-bottom-container {
+        width: 100%;
+        height: calc(100% - 30px);
+        display: flex;
+}
+
+.middle-top-header {
+        font-size: 30px;
+        font-family: "poppins-regular";
+        text-align: center;
+        width: 100%;
+}
+
+.interest-container {
+        box-sizing: border-box;
+        padding: 10px;
+        width: 200px;
+        height: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-right: 1px solid rgb(231, 231, 204);
+        border-left: 1px solid rgb(231, 231, 204);
+}
+
+.interest-header {
+        margin: auto;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        font-size: 30px;
+        font-family: "momcake";
+        color: rgb(14, 172, 245);
+        border-bottom: 3px solid rgb(32, 32, 32);
+
+}
+
+.interest-body {
+        margin: auto;
+        /* margin-left: 15px; */
+        height: calc(100% - 40px);
+}
 
 
+/* top right container */
+.link {
+        display: block;
+        width: 100%;
+        height: 50%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        color: white;
+}
 
+.link:hover {
+        opacity: 0.6;
+        filter: blur(0px);
+        -webkit-filter: blur(0px);
+}
+
+.link-subcontainer {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+}
+
+.link-text {
+        text-align: center;
+        font-size: 50px;
+        margin: auto;
+        font-family: "poppins-regular";
+        padding: 5px;
+        border-radius: 5px;
+        /* color: white; */
+        color: rgb(56, 55, 54);
+
+}
+
+.github-image {
+        background-image: url("../../../assets/images/github2.png");
+        filter: blur(6px);
+        -webkit-filter: blur(6px);
+}
+
+.resume-image {
+        background-image: url("../../../assets/images/resume.png");
+        filter: blur(6px);
+        -webkit-filter: blur(6px);
+}
 
 .side-button-container {
         position: absolute;
