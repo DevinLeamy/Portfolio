@@ -14,6 +14,7 @@ import { ProjectComponent } from "./components/projects-page/project/project.com
 import { TagComponent } from "./components/projects-page/project/tag/tag.component"
 import { ProjectDisplayComponent } from "./components/projects-page/project-display/project-display.component"
 import { ImageTagComponent } from './components/projects-page/image-tag/image-tag.component'
+import { ContactMeComponent } from "./components/splash-page/contact-me/contact-me.component"
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ImageTagComponent } from './components/projects-page/image-tag/image-ta
     ProjectComponent,
     TagComponent,
     ProjectDisplayComponent,
-    ImageTagComponent
+    ImageTagComponent,
+    ContactMeComponent
   ],
   imports: [
     BrowserModule,

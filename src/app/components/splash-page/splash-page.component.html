@@ -1,6 +1,6 @@
 <div class="container">
         <div class='sub-container'>
-                <div class="header-container">
+                <div class="header-container" *ngIf="!this.selected">
                         <div class='main-header'>
                                 De·vin Lea·my
                         </div>
@@ -10,18 +10,24 @@
                 </div>
         </div>
 </div>
-<div class="side-button-container left">
+<div class="side-button-container left"  *ngIf="!this.selected">
         <app-arrow-button (click)="this.pageService.leftButtonClicked()" [routerLink]="'/projects'">
                 <
         </app-arrow-button>
 </div>
-<div class="side-button-container right">
+<div class="side-button-container right"  *ngIf="!this.selected">
         <app-arrow-button (click)="this.pageService.rightButtonClicked()" [routerLink]="'/about'">
                 >
         </app-arrow-button>
 </div>
-<div class="bottom-button-container">
-        <app-arrow-button>
+<div class="bottom-button-container"  *ngIf="!this.selected">
+        <app-arrow-button (click)='this.selected = true'>
                         v
         </app-arrow-button>
+</div>
+<div class='contact-me-container' *ngIf="this.media.isActive('gt-sm')" fxShow="true" fxHide.lt-md="true" [@showContactMe]="this.selected? 'visible':'hidden'">
+        <app-contact-me *ngIf='this.selected' (getSelectedChange)="contactMeCallback($event)"></app-contact-me>
+</div>
+<div class='contact-me-container-small'  *ngIf="this.media.isActive('lt-md')" fxShow="true" fxHide.gt-sm="true" [@showContactMe]="this.selected? 'visible':'hidden'">
+        <app-contact-me *ngIf='this.selected' (getSelectedChange)="contactMeCallback($event)"></app-contact-me>
 </div>

@@ -56,7 +56,33 @@
         width: 80px;
 }
 
+.contact-me-container {
+        position: absolute;
+        top: calc(50% - 325px);
+        right: calc(50% - 275px);
+        width: 550px;
+        height: 650px;
+        opacity: 1;
+        z-index: -1;
+        background-color: transparent;
+        box-sizing: border-box;
+        padding: 10px;
+        border-radius: 10px;
+}
 
+.contact-me-container-small {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        width: calc(100% - 20px);
+        height: calc(100% - 20px);
+        opacity: 1;
+        z-index: -1;
+        background-color: transparent;
+        box-sizing: border-box;
+        padding: 10px;
+        border-radius: 10px;
+}
 
 .left {
         left: 0px;
@@ -77,3 +103,5 @@
         height: 80px;
         bottom: 0px;
 }
+
+
