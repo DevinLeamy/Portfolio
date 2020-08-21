@@ -63,16 +63,10 @@ let linkAnimation = group([
                         animate(1000, keyframes([
                                 style({opacity: 0.5, filter: "blur(9px)"}),
                                 style({opacity: 1, filter: "blur(0px)"})
-                        ])),
-                        // animate(700, keyframes([
-                        //         style({fontSize: "60px", color: "rgb(56, 55, 54)"}),
-                        //         style({fontSize: "70px", color: "rgb(162, 186, 250)"}),
-                        //         style({fontSize: "50px", color: "rgb(56, 55, 54)"})
-                        // ]))
-                ])
-        , {optional: true})
+                        ]))
+                ]), {optional: true}
+        )
 ])
-// let currentEventsAnimation = query(".middle-container", animate(1000))
 
 let eventsAnimation = group([
         query(".interest-container", stagger(200, animate(400, keyframes([
@@ -84,6 +78,35 @@ let eventsAnimation = group([
         ]))), {optional: true}),
         query(".middle-top-header", animate(2000, style({opacity: 1})), {optional: true})
 ])
+
+let aboutMeExitAnimation = [group([
+        query(".right-container, .left-container, .bottom-container, .header", stagger(100, [
+                animate("300ms ease", style({
+                                opacity: 0,
+                                width: 0,
+                                height: 0,
+                                transform: "translateY(-400px)" 
+                }))
+        ]), {optional: true})
+        // query(".right-container", animate("300ms", style({
+        //         opacity: 0,
+        //         width: 0,
+        //         height: 0,
+        //         transform: "translateX(400px)"
+        // })), {optional: true}),
+        // query(".left-container", animate("300ms", style({
+        //         opacity: 0,
+        //         width: 0,
+        //         height: 0,
+        //         transform: "translateY(-400px)"
+        // })), {optional: true}),
+        // query(".bottom-container", animate("300ms", style({
+        //         opacity: 0,
+        //         width: 0,
+        //         height: 0,
+        //         transform: "translateX(-400px)"
+        // })), {optional: true})
+])]
 
 let aboutMeSetInitialPositions = [
         initialPositions
@@ -101,4 +124,4 @@ let aboutMeAnimateElements = [
 let pageSlide = trigger("aboutMePageAnimation", [
         transition(":enter", aboutMeSetInitialPositions.concat(aboutMeAnimateElements))
 ])
-export { pageSlide, aboutMeSetInitialPositions, aboutMeAnimateElements }
+export { pageSlide, aboutMeSetInitialPositions, aboutMeAnimateElements, aboutMeExitAnimation }

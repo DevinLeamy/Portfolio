@@ -1,5 +1,5 @@
 import { trigger, state, style, transition, animate, stagger, query, animateChild, animation, group, keyframes } from "@angular/animations"
-import { aboutMeSetInitialPositions, aboutMeAnimateElements } from "../animations/about-me-page.animation"
+import { aboutMeSetInitialPositions, aboutMeAnimateElements, aboutMeExitAnimation } from "../animations/about-me-page.animation"
 let fadeInFromLeft = [
         trigger('fadeLeft', [
                 state('void', style({
@@ -124,6 +124,7 @@ let pageSlide = [
                                         top: 0
                                 }),
                         ]),
+                        aboutMeExitAnimation[0],
                         query(':leave', [
                                 animate(200, style({
                                         height: '500px',
