@@ -99,7 +99,7 @@
 
 .school-text {
         text-align: center;
-        font-size: 16px;
+        font-size: 18px;
 }
 
 .traits-container {
@@ -127,6 +127,15 @@
         height: 60px;
         background-size: contain;
         background-repeat: no-repeat;
+}
+
+.trait-container:hover .trait-icon {
+        width: 80px;
+        height: 80px;
+}
+
+.trait-container:hover {
+        border-bottom: 4px solid hotpink;
 }
 
 .trait-text-container {
@@ -182,9 +191,10 @@
 
 .middle-top-header {
         font-size: 30px;
-        font-family: "poppins-regular";
+        font-family: "poppins-semibold";
         text-align: center;
         width: 100%;
+        transform: translateY(-10px);
 }
 
 .interest-container {
@@ -199,8 +209,8 @@
 }
 
 .interest-container:hover {
-        border-right: 3px solid black;
-        border-left: 3px solid black;
+        border-right: 3px solid hotpink;
+        border-left: 3px solid hotpink;
 }
 
 .interest-header {

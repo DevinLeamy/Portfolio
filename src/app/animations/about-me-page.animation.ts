@@ -39,12 +39,13 @@ let initialPositions = [
         query(".trait-container", style({ borderBottom: "4px solid transparent" })),
         query(".trait-text", style({ opacity: 0, transform: "translateY(100px)" })),
         query(".header", style({ opacity: 0 })),
-        query(".middle-container", [
+        query(".bottom-container", [
                 style({ transform: "translateX(800px)", opacity: 0 })
-        ])
+        ]),
+        query(".interest-container", style({ borderRight: '1px solid transparent', borderLeft: "1px solid transparent"}))
 ]
 
-let containerAnimation = query(".right-container, .left-container, .middle-container", [
+let containerAnimation = query(".right-container, .left-container, .bottom-container", [
                 stagger("100ms", animate("500ms ease"))
         ])
 
@@ -54,8 +55,8 @@ let headerAnimation = query(".header", animate("200ms ease", style({
 let linkAnimation = query(".link, .link-text",
         group([
                 animate(1000, keyframes([
-                        style({opacity: 1, filter: "blur(9px)"}),
-                        style({filter: "blur(0px)"})
+                        style({opacity: 0.5, filter: "blur(9px)"}),
+                        style({opacity: 1, filter: "blur(0px)"})
                 ])),
                 // animate(700, keyframes([
                 //         style({fontSize: "60px", color: "rgb(56, 55, 54)"}),
@@ -64,6 +65,18 @@ let linkAnimation = query(".link, .link-text",
                 // ]))
         ])
 )
+// let currentEventsAnimation = query(".middle-container", animate(1000))
+
+let eventsAnimation = group([
+        query(".interest-container", stagger(200, animate(400, keyframes([
+                style({opacity: 1, borderRight: '3px solid hotpink'}),
+                style({opacity: 1, borderRight: '1px solid rgb(231, 231, 204)', borderLeft: '1px solid rgb(231, 231, 204)'})
+        ]))), {optional: true}),
+        query(".interest-body, .interest-header", stagger(200, animate(200, keyframes([
+                style({opacity: 1}),
+        ]))), {optional: true}),
+        query(".middle-top-header", animate(2000, style({opacity: 1})))
+])
 let pageSlide = trigger("aboutMePageAnimation", [
         transition(":enter", [
                 initialPositions[0],
@@ -74,11 +87,15 @@ let pageSlide = trigger("aboutMePageAnimation", [
                 initialPositions[5],
                 initialPositions[6],
                 initialPositions[7],
+                initialPositions[8],
                 containerAnimation,
                 headerAnimation,
-                linkAnimation,
                 schoolAnimation,
-                traitsAnimation
+                linkAnimation,
+                group([
+                        traitsAnimation
+                ]),
+                eventsAnimation,
         ])
 ])
 export { pageSlide }
