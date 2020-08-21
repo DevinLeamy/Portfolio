@@ -1,5 +1,5 @@
 import { trigger, state, style, transition, animate, stagger, query, animateChild, animation, group, keyframes } from "@angular/animations"
-
+import { aboutMeSetInitialPositions, aboutMeAnimateElements } from "../animations/about-me-page.animation"
 let fadeInFromLeft = [
         trigger('fadeLeft', [
                 state('void', style({
@@ -26,6 +26,7 @@ let fadeInFromRight = [
 let pageSlide = [
         trigger("pageAnimation", [
                 transition('SplashPage => AboutPage, ProjectPage => SplashPage', [
+                        aboutMeSetInitialPositions[0],
                         query(':enter', [
                                 style({
                                         position: 'absolute',
@@ -88,10 +89,16 @@ let pageSlide = [
                                         top: 0,
                                         left: 0
                                 }))
-                        ])
+                        ]),
+                        aboutMeAnimateElements[0],
+                        aboutMeAnimateElements[1],
+                        aboutMeAnimateElements[2],
+                        aboutMeAnimateElements[3],
+                        aboutMeAnimateElements[4],
+                        aboutMeAnimateElements[5]
                 ]),
                 transition('AboutPage => SplashPage, SplashPage => ProjectPage', [
-                         query(".project-container, .projects-header", 
+                        query(".project-container, .projects-header", 
                                 style({
                                         opacity: 0,
                                         transform: 'translateY(-200px)'
