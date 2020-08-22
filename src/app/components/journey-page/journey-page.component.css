@@ -297,3 +297,37 @@
         left: 0;
         top: 0;
 }
+
+
+/* Media Queries for responive layout */
+@media only screen and (max-width: 959px) {
+        .header {
+                font-size: 35px;
+        }
+
+        .right-container {
+                margin-top: 10px;
+                margin-left: 0px
+        }
+        
+        .middle-container {
+                width: 350px;
+                height: 710px;
+        }
+
+        .middle-bottom-container {
+                flex-direction: column;
+                /* justify-content: center; */
+                margin-bottom: 10px;
+        }
+
+        .interest-container {
+                margin: auto;
+                width: 250px;
+        }
+
+        .interest-body {
+                font-size: 17px;
+        }
+
+}
