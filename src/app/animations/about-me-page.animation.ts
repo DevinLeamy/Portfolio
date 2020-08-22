@@ -73,7 +73,7 @@ let eventsAnimation = group([
                 style({opacity: 1, borderRight: '3px solid hotpink'}),
                 style({opacity: 1, borderRight: '1px solid rgb(231, 231, 204)', borderLeft: '1px solid rgb(231, 231, 204)'})
         ]))), {optional: true}),
-        query(".interest-body, .interest-header", stagger(200, animate(200, keyframes([
+        query(".interest-body, .interest-header", stagger(150, animate(200, keyframes([
                 style({opacity: 1}),
         ]))), {optional: true}),
         query(".middle-top-header", animate(2000, style({opacity: 1})), {optional: true})

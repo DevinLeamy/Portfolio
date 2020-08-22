@@ -5,6 +5,7 @@ import { Subscription } from 'rxjs'
 import { TagsService } from '../../../services/tags.service'
 import { TechnologyTag } from 'src/app/models/technology-tag.model'
 import { LanguageTag } from 'src/app/models/language-tag.model'
+import { MediaObserver } from '@angular/flex-layout'
 
 @Component({
         selector: "app-project-display",
@@ -16,7 +17,7 @@ export class ProjectDisplayComponent implements OnInit, OnDestroy, AfterViewInit
         @ViewChild("imageContainer") imageContainer: ElementRef
         selectedProject: Project
         selectedProjectIdSub: Subscription
-        constructor(public projectsService: ProjectsService, public tagsService: TagsService) {}
+        constructor(public projectsService: ProjectsService, public tagsService: TagsService, public media: MediaObserver) {}
         
         ngOnInit() {
                 this.selectedProjectIdSub = this.projectsService.getSelectedIdUpdated()

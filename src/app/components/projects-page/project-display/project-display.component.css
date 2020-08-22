@@ -278,3 +278,27 @@
         cursor: pointer;
 }
 
+/* Media Queries for responive layout */
+@media only screen and (max-width: 959px) {
+        .top-container {
+                height: 60px;
+        }
+        .icon-container {
+                width: 60px;
+                height: 60px;
+        }
+        .main-title {
+                font-size: 35px;
+        }
+        .readme {
+                font-size: 25px;
+        }
+        .text-body {
+                font-size: 15px;
+        }
+
+        .image {
+                width: 150px;
+                height: 150px;
+        }
+}
