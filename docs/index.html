@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+        <head>
+                <meta charset="utf-8">
+                        <title>Devin Leamy</title>
+                        <base href="/">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <link rel="icon" type="image/x-icon" href="./assets/favicons/favicon.ico">
+        </head>
+        <body id='body'>
+                <app-root></app-root>
+        <script src="runtime-es2015.js" type="module"></script><script src="runtime-es5.js" nomodule defer></script><script src="polyfills-es5.js" nomodule defer></script><script src="polyfills-es2015.js" type="module"></script><script src="styles-es2015.js" type="module"></script><script src="styles-es5.js" nomodule defer></script><script src="vendor-es2015.js" type="module"></script><script src="vendor-es5.js" nomodule defer></script><script src="main-es2015.js" type="module"></script><script src="main-es5.js" nomodule defer></script></body>
+</html>
+<script>
+        const body = document.getElementById("body")
+        body.onload = setBackgroundImage
+        const backgroundImages = [
+                "assets/images/splash2.jpg", 
+                // "assets/images/splash3.jpg", 
+                // "assets/images/splash4.jpg", 
+                // "assets/images/splash5.jpg", 
+                "assets/images/splash6.jpg"
+        ] 
+
+        function setBackgroundImage() {
+                const imageIndex = getRandomInt(backgroundImages.length)
+                body.style.backgroundImage = "url(" + backgroundImages[imageIndex] + ")"
+        }
+
+        function getRandomInt(cap) {
+                return Math.floor(Math.random() * Math.floor(cap))
+        }
+</script>
