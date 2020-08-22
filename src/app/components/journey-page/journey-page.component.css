@@ -300,7 +300,7 @@
 
 
 /* Media Queries for responive layout */
-@media only screen and (max-width: 959px) {
+@media only screen and (max-width: 700px) {
         .header {
                 font-size: 35px;
         }
@@ -312,7 +312,8 @@
         
         .middle-container {
                 width: 350px;
-                height: 710px;
+                height: 800px;
+                padding-bottom: 10px;
         }
 
         .middle-bottom-container {
@@ -324,6 +325,7 @@
         .interest-container {
                 margin: auto;
                 width: 250px;
+                height: 190px;
         }
 
         .interest-body {
