@@ -3166,8 +3166,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           _id: 0,
           title: "Pacman",
           subtitle: "The 80's Classic 'Pacman'",
-          imageUrl: "src/assets/images/pacman-image2.png",
-          iconUrl: "src/assets/images/pacman-ghost.png",
+          imageUrl: "assets/images/pacman-image2.png",
+          iconUrl: "assets/images/pacman-ghost.png",
           link: "https://github.com/DevinLeamy/Pacman",
           text: "I made an accurate recreation of the game that was once loved, is universally known and, that stands as a hallmark of the arcade-game era of the 80's. Pacman. This recreation is complete with a splash screen, four AI ghosts, animations, sounds, fruits and, progressively more challenging levels. Additionally, I logged it's development on Youtube @devinleamy.",
           languages: ["Python"],
@@ -3176,8 +3176,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           _id: 1,
           title: "DDM - Rumble",
           subtitle: "A Thread Based Messaging Platform",
-          imageUrl: "src/assets/images/ddm-rumble-image.png",
-          iconUrl: "src/assets/images/ddm-rumble.png",
+          imageUrl: "assets/images/ddm-rumble-image.png",
+          iconUrl: "assets/images/ddm-rumble.png",
           link: "https://github.com/DevinLeamy/DDM",
           text: "Rumble - My Dope Messenger, is a thread-based messenging platform that sits upon a responsive and intuitive Angular UI. Rumble helps break down the barriers to personal communitation built up throughout the COVID-19 pandemic by making discourse with others easier and more accessible. Create chats, make friends, Rumble.",
           languages: ["Typescript", "Javascript", "HTML", "CSS"],
@@ -3186,8 +3186,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           _id: 2,
           title: "Algorithmic Tasks",
           subtitle: "An Archive of Algorithms",
-          imageUrl: "src/assets/images/competitive-programming-image.png",
-          iconUrl: "src/assets/images/competitive-programming.png",
+          imageUrl: "assets/images/competitive-programming-image.png",
+          iconUrl: "assets/images/competitive-programming.png",
           link: "https://github.com/DevinLeamy/Competitive-Programming",
           text: "Months of solving coding problems on Codeforces, LeetCode, DMOJ and other platforms has culminated into a noteworthy archive of algorithms. This archive, and the algorithms therein, utilize a variety of data structures and approaches, from Union-Finds in Greedy algorithms to Sparse-Tables in Dynamic Programming algorithms.",
           languages: ["C++", "Java", "C"],
@@ -3196,8 +3196,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           _id: 3,
           title: "Chess.me",
           subtitle: "A Mobile Chess App",
-          imageUrl: "src/assets/images/chess-image.png",
-          iconUrl: "src/assets/images/chess-me.png",
+          imageUrl: "assets/images/chess-image.png",
+          iconUrl: "assets/images/chess-me.png",
           link: "https://github.com/DevinLeamy/Chess.me",
           text: "I brought the offical game of coffee tables around the world to the iPhone with Chess.me. Chess.me is a unique mobile chess app that support three engaging game modes, namely, .COUPLE: pass-and-play chess, .BLUETOOTH: local wireless chess with friends and, .ME: a challenging gamemode that puts players up against an infinitly clever Chess AI.",
           languages: ["Swift"],
@@ -3206,8 +3206,8 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           _id: 4,
           title: "Route",
           subtitle: "A Path Finding Algorithm Visualizer",
-          imageUrl: "src/assets/images/route-image2.png",
-          iconUrl: "src/assets/images/route.png",
+          imageUrl: "assets/images/route-image2.png",
+          iconUrl: "assets/images/route.png",
           link: "https://github.com/DevinLeamy/Route",
           text: "Route is a dynamic path finding algorithm visualization tool. Route allows users to compare and contrast two of the most popular algorithms for preforming searches on unweighted graphs, A* and Breadth-First-Search. In addition to displaying their behavior visually, Route records key information about each search, specifically, the number of nodes traversed and the computed shortest path. ",
           languages: ["Javascript", "HTML", "CSS"],
@@ -3315,92 +3315,92 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
           _id: 0,
           text: 'JavaScript',
           color: "#f1e05a",
-          imageUrl: '../../../../assets/images/javascript.png'
+          imageUrl: 'assets/images/javascript.png'
         }, {
           _id: 1,
           text: 'Java',
           color: "#b07219",
-          imageUrl: '../../../../assets/images/java.png'
+          imageUrl: 'assets/images/java.png'
         }, {
           _id: 2,
           text: 'Swift',
           color: "#ffac45",
-          imageUrl: '../../../../assets/images/swift.png'
+          imageUrl: 'assets/images/swift.png'
         }, {
           _id: 3,
           text: 'C',
           color: "#555555",
-          imageUrl: '../../../../assets/images/c.png'
+          imageUrl: 'assets/images/c.png'
         }, {
           _id: 4,
           text: 'C++',
           color: "#f34b7d",
-          imageUrl: '../../../../assets/images/cpp.png'
+          imageUrl: 'assets/images/cpp.png'
         }, {
           _id: 5,
           text: 'CSS',
           color: "#563d7c",
-          imageUrl: '../../../../assets/images/css.png'
+          imageUrl: 'assets/images/css.png'
         }, {
           _id: 6,
           text: 'HTML',
           color: "#e44b23",
-          imageUrl: '../../../../assets/images/html.png'
+          imageUrl: 'assets/images/html.png'
         }, {
           _id: 7,
           text: 'Python',
           color: "#3572A5",
-          imageUrl: '../../../../assets/images/python.png'
+          imageUrl: 'assets/images/python.png'
         }, {
           _id: 8,
           text: 'TypeScript',
           color: "#2b7489",
-          imageUrl: '../../../../assets/images/typescript.png'
+          imageUrl: 'assets/images/typescript.png'
         }];
         this.techTags = [{
           _id: 0,
           text: 'Angular',
-          imageUrl: '../../../../assets/images/angular.png'
+          imageUrl: 'assets/images/angular.png'
         }, {
           _id: 1,
           text: 'Node JS',
-          imageUrl: '../../../../assets/images/nodejs.png'
+          imageUrl: 'assets/images/nodejs.png'
         }, {
           _id: 2,
           text: 'Express',
-          imageUrl: '../../../../assets/images/expressjs.png'
+          imageUrl: 'assets/images/expressjs.png'
         }, {
           _id: 3,
           text: 'MongoDB',
-          imageUrl: '../../../../assets/images/mongodb.png'
+          imageUrl: 'assets/images/mongodb.png'
         }, {
           _id: 4,
           text: 'Heroku',
-          imageUrl: '../../../../assets/images/heroku.png'
+          imageUrl: 'assets/images/heroku.png'
         }, {
           _id: 5,
           text: 'Codeforces',
-          imageUrl: '../../../../assets/images/codeforces.png'
+          imageUrl: 'assets/images/codeforces.png'
         }, {
           _id: 6,
           text: 'Leetcode',
-          imageUrl: '../../../../assets/images/leetcode.png'
+          imageUrl: 'assets/images/leetcode.png'
         }, {
           _id: 7,
           text: 'DMOJ',
-          imageUrl: '../../../../assets/images/dmoj.png'
+          imageUrl: 'assets/images/dmoj.png'
         }, {
           _id: 8,
           text: 'Pygame',
-          imageUrl: '../../../../assets/images/pygame2.png'
+          imageUrl: 'assets/images/pygame2.png'
         }, {
           _id: 9,
           text: 'Github Pages',
-          imageUrl: '../../../../assets/images/github-pages.png'
+          imageUrl: 'assets/images/github-pages.png'
         }, {
           _id: 10,
           text: "Xcode",
-          imageUrl: '../../../../assets/images/xcode.png'
+          imageUrl: 'assets/images/xcode.png'
         }];
       } //Get tech tag
 
