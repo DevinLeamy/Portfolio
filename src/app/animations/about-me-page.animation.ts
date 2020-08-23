@@ -59,12 +59,12 @@ let headerAnimation = group([
 ])
 let linkAnimation = group([
         query(".link, .link-text",
-                group([
-                        animate(1000, keyframes([
-                                style({opacity: 0.5, filter: "blur(9px)"}),
-                                style({opacity: 1, filter: "blur(0px)"})
-                        ]))
-                ]), {optional: true}
+                animate(1500, keyframes([
+                        style({opacity: 0.2, filter: "blur(9px)"}),
+                        style({opacity: 0.5, filter: "blur(6px)"}),
+                        style({opacity: 0.8, filter: "blur(3px)"}),
+                        style({opacity: 1, filter: "blur(0px)"})
+                ])), {optional: true}
         )
 ])
 
@@ -88,25 +88,12 @@ let aboutMeExitAnimation = [group([
                                 transform: "translateY(-400px)" 
                 }))
         ]), {optional: true})
-        // query(".right-container", animate("300ms", style({
-        //         opacity: 0,
-        //         width: 0,
-        //         height: 0,
-        //         transform: "translateX(400px)"
-        // })), {optional: true}),
-        // query(".left-container", animate("300ms", style({
-        //         opacity: 0,
-        //         width: 0,
-        //         height: 0,
-        //         transform: "translateY(-400px)"
-        // })), {optional: true}),
-        // query(".bottom-container", animate("300ms", style({
-        //         opacity: 0,
-        //         width: 0,
-        //         height: 0,
-        //         transform: "translateX(-400px)"
-        // })), {optional: true})
 ])]
+
+let linkSchoolAnimation = group([
+        linkAnimation,
+        schoolAnimation
+])
 
 let aboutMeSetInitialPositions = [
         initialPositions
@@ -115,8 +102,7 @@ let aboutMeSetInitialPositions = [
 let aboutMeAnimateElements = [
         containerAnimation,
         headerAnimation,
-        schoolAnimation,
-        linkAnimation,
+        linkSchoolAnimation,
         traitsAnimation,
         eventsAnimation
 ]

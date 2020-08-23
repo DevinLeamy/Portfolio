@@ -95,7 +95,7 @@ let pageSlide = [
                         aboutMeAnimateElements[2],
                         aboutMeAnimateElements[3],
                         aboutMeAnimateElements[4],
-                        aboutMeAnimateElements[5]
+                        // aboutMeAnimateElements[5]
                 ]),
                 transition('AboutPage => SplashPage, SplashPage => ProjectPage', [
                         query(".project-container, .projects-header", 
