@@ -279,7 +279,7 @@
 }
 
 /* Media Queries for responive layout */
-@media only screen and (max-width: 959px) {
+@media only screen and (max-width: 959px) and (min-width: 350px) {
         .top-container {
                 height: 60px;
         }
