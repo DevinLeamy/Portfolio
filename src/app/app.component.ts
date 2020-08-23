@@ -5,12 +5,13 @@ import { PageService } from "./services/page.service"
 import { Subscription } from "rxjs"
 import { contactMeAnimation } from './animations/splash-page.animation'
 import { MediaObserver } from '@angular/flex-layout'
+import { projectsAnimation } from './animations/projects-page.animation'
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  animations: [pageSlide, contactMeAnimation],
+  animations: [pageSlide, contactMeAnimation, projectsAnimation],
   providers: [PageService]
 })
 export class AppComponent implements OnInit, OnDestroy {
@@ -20,6 +21,7 @@ export class AppComponent implements OnInit, OnDestroy {
         rightExpanded: boolean = false
         title: string = 'devinleamy'
         selected: boolean = false
+        hovering: boolean = false
         constructor(public pageService: PageService, public media: MediaObserver) {}
         
         ngOnInit() {

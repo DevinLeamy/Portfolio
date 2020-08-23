@@ -210,8 +210,8 @@
 }
 
 .interest-container:hover {
-        border-right: 3px solid hotpink;
-        border-left: 3px solid hotpink;
+        border-right: 3px solid rgb(182, 182, 161);
+        border-left: 3px solid rgb(182, 182, 161);
 }
 
 .interest-header {

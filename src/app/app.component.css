@@ -45,7 +45,7 @@
         z-index: -1;
 }
 
-.contact-me-button {
+.contact-me-button, .info-button {
         /* background-color: rgb(56, 63, 65); */
         background-color: rgb(40, 40, 40);
         color: white;
@@ -54,13 +54,26 @@
         padding: 10px;
         border-radius: 10px;
         text-align: center;
+        margin: 3px
 }
 
-.contact-me-button:hover {
+.contact-me-button:hover, .info-button:hover {
         /* background-color: rgb(47, 53, 54); */
         background-color: rgb(32, 32, 32);
-        line-height: 23px;
-        font-size: 23px;
+        line-height: 22px;
+        font-size: 22px;
         opacity: 1;
         cursor: pointer;
+}
+
+.tooltip {
+        position: absolute;
+        transform: translateY(-65px) translateX(60px);
+        border-radius: 10px;
+        padding: 5px;
+        font-size: 16px;
+        background-color: rgb(12, 12, 12);
+        color: white;
+        text-align: center;
+        white-space: nowrap;
 }

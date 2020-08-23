@@ -1,10 +1,19 @@
 <div [@pageAnimation]="prepareRoute(outlet)" class="container" [@showContactMe]="!this.selected? 'visible':'hidden'">
         <router-outlet #outlet="outlet">
                 <div class="bottom-button-container" [@showContactMe]="!this.selected? 'visible':'hidden'">
-                        <div class='contact-me-button  transform-width transform-height transform-line-height transform-font-size' (click)='this.selected = true'>
+                        <div class='contact-me-button transform-width transform-height transform-line-height transform-font-size' (click)='this.selected = true'>
                                         contact me
                         </div>
+                        <div class='info-button transform-width transform-height transform-line-height transform-font-size' (click)="this.hovering = !this.hovering">
+                                        info
+                        </div>
+                        <div class='tooltip' [@showTooltip]="this.hovering? 'visible':'hidden'">
+                                📩&nbsp;&nbsp;devinleamy@gmail.com<br/>
+                                📞&nbsp;&nbsp;403-615-7302
+                        </div>
+                        
                 </div>
+                <!-- 📫📩☎️📫📳📫☎️📞 -->
         </router-outlet>
 </div>
 
