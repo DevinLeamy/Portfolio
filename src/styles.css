@@ -3,7 +3,6 @@ body, html {
         width: 100%;
         height: 100%;
         padding: 0px;
-        overflow: auto;
 }
 
 body {
@@ -11,6 +10,7 @@ body {
         background-color: rgb(29, 31, 36);
         background-size: cover;
         background-position: center center;
+        overflow: hidden;
 }
 /* Make scroll bar invisible */
 ::-webkit-scrollbar {

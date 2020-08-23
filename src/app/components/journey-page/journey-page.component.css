@@ -216,10 +216,10 @@
 
 .interest-header {
         margin: auto;
-        height: 30px;
-        line-height: 30px;
+        height: 25px;
+        line-height: 25px;
         text-align: center;
-        font-size: 30px;
+        font-size: 25px;
         font-family: "momcake";
         color: rgb(14, 172, 245);
         border-bottom: 3px solid rgb(32, 32, 32);
@@ -229,6 +229,7 @@
 .interest-body {
         margin: auto;
         /* margin-left: 15px; */
+        font-size: 15px;
         height: calc(100% - 40px);
 }
 
