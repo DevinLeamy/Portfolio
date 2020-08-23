@@ -297,8 +297,67 @@
                 font-size: 15px;
         }
 
+        /* */
+        .middle-container {
+                height: calc(100% - 160px);
+        }
+
+        .middle-right-container {
+                width: 150px;
+        }
+
+        .middle-left-container {
+                width: calc(100% - 153px);
+        }
+        /* */
+
         .image {
                 width: 150px;
                 height: 150px;
+        }
+}
+
+/* Media Queries for responive layout */
+@media only screen and (max-width: 400px) {
+        .top-container {
+                height: 60px;
+        }
+        .icon-container {
+                width: 60px;
+                height: 60px;
+        }
+        .main-title {
+                font-size: 30px;
+        }
+        .readme {
+                font-size: 25px;
+        }
+        .text-body {
+                font-size: 15px;
+        }
+        .middle-right-container {
+                width: 100px;
+        }
+
+        .middle-left-container {
+                width: calc(100% - 103px);
+        }
+        
+        .image {
+                width: 100px;
+                height: 100px;
+        }
+
+        .middle-container {
+                height: calc(100% - 140px);
+        }
+
+        .bottom-container {
+                height: 80px;
+        }
+
+        .tech-tag .lang-tag{
+                width: 40px;
+                height: 40px;
         }
 }
