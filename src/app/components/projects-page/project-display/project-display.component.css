@@ -91,9 +91,9 @@
 .image-container {
         order: 0;
         width: 100%;
-        /* display: flex; */
+        display: flex;
         height: calc(100% - 100px);
-        /* align-items: center; */
+        align-items: center;
 }
 
 .image {
@@ -315,6 +315,12 @@
         .image {
                 width: 150px;
                 height: 150px;
+        }
+
+        .image-container {
+                height: calc(100% - 80px);
+                margin-top: 20px;
+                display: block;
         }
 }
 
