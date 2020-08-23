@@ -343,20 +343,20 @@
         
         .middle-container {
                 margin-top: 10px;
-                height: calc(100% - 150px);
+                height: calc(100% - 140px);
         }
 
         .middle-right-container {
-                width: 150px;
+                width: 100px;
         }
 
         .middle-left-container {
-                width: calc(100% - 153px);
+                width: calc(100% - 103px);
         }
 
         .image {
-                width: 150px;
-                height: 150px;
+                width: 100px;
+                height: 100px;
         }
 
         .image-container {
@@ -366,7 +366,7 @@
         }
 
         .bottom-container {
-                height: 70px;
+                height: 80px;
         }
 
         .tech-tag .lang-tag{
