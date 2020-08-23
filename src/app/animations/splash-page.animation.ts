@@ -7,7 +7,6 @@ let contactMeAnimation = trigger('showContactMe', [
         })),
         state('visible', style({
                 opacity: 1,
-                backgroundColor: 'white',
                 zIndex: 1
         })),
         transition('visible <=> hidden', animate(200))

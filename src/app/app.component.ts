@@ -3,12 +3,14 @@ import { RouterOutlet } from '@angular/router'
 import { pageSlide } from "./animations/global.animation"
 import { PageService } from "./services/page.service"
 import { Subscription } from "rxjs"
+import { contactMeAnimation } from './animations/splash-page.animation'
+import { MediaObserver } from '@angular/flex-layout'
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  animations: [pageSlide],
+  animations: [pageSlide, contactMeAnimation],
   providers: [PageService]
 })
 export class AppComponent implements OnInit, OnDestroy {
@@ -17,7 +19,8 @@ export class AppComponent implements OnInit, OnDestroy {
         leftExpanded: boolean = false
         rightExpanded: boolean = false
         title: string = 'devinleamy'
-        constructor(public pageService: PageService) {}
+        selected: boolean = false
+        constructor(public pageService: PageService, public media: MediaObserver) {}
         
         ngOnInit() {
                 this.leftExpandedSub = this.pageService.getLeftExpandedUpdated()
@@ -30,6 +33,12 @@ export class AppComponent implements OnInit, OnDestroy {
 
         prepareRoute(outlet: RouterOutlet) {
                 return outlet && outlet.activatedRouteData && outlet.activatedRouteData.animation
+        }
+
+        contactMeCallback(event) {
+                if (event !== undefined && event !== null) {
+                        this.selected = event
+                }
         }
 
         ngOnDestroy() {

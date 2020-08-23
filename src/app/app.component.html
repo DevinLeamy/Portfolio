@@ -1,7 +1,20 @@
-<div [@pageAnimation]="prepareRoute(outlet)" class="container">
+<div [@pageAnimation]="prepareRoute(outlet)" class="container" [@showContactMe]="!this.selected? 'visible':'hidden'">
         <router-outlet #outlet="outlet"></router-outlet>
 </div>
 
 <div class="logo no-select">DEVIN LEAMY 
         <!-- 2003 -->
+</div>
+
+<div class="bottom-button-container" [@showContactMe]="!this.selected? 'visible':'hidden'">
+        <div class='contact-me-button  transform-width transform-height transform-line-height transform-font-size' (click)='this.selected = true'>
+                        contact me
+        </div>
+</div>
+        
+<div class='contact-me-container' *ngIf="this.media.isActive('gt-sm')" fxShow="true" fxHide.lt-md="true" [@showContactMe]="this.selected? 'visible':'hidden'">
+        <app-contact-me *ngIf='this.selected' (getSelectedChange)="contactMeCallback($event)"></app-contact-me>
+</div>
+<div class='contact-me-container-small'  *ngIf="this.media.isActive('lt-md')" fxShow="true" fxHide.gt-sm="true" [@showContactMe]="this.selected? 'visible':'hidden'">
+        <app-contact-me *ngIf='this.selected' (getSelectedChange)="contactMeCallback($event)"></app-contact-me>
 </div>

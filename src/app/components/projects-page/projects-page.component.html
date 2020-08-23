@@ -1,4 +1,4 @@
-<div class="side-button-container">
+<div class="side-button-container" *ngIf="!this.selected">
         <app-arrow-button (click)="this.pageService.rightButtonClicked()" [routerLink]="'/splash'">
                       >
         </app-arrow-button>
