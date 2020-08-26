@@ -1,7 +1,14 @@
-<div class="side-button-container" *ngIf="!this.selected">
+<div class="side-button-container right" *ngIf="!this.selected">
         <app-arrow-button (click)="this.pageService.rightButtonClicked()" [routerLink]="'/splash'">
                       >
         </app-arrow-button>
+        
+</div>  
+<div class="side-button-container left" *ngIf="!this.selected">
+        <app-arrow-button (click)="this.pageService.leftButtonClicked()" [routerLink]="'/about'">
+                      <
+        </app-arrow-button>
+        
 </div>  
 <div  class="container" #container [@projectsAnimation]='this.projectsService.getProjects().length'>
         <div class='sub-container'>

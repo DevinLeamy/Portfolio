@@ -300,10 +300,14 @@
 }
 
 .left {
-        left: 0;
-        top: 0;
+        left: 0px;
+        top: 0px;
 }
 
+.right {
+        top: 0px;
+        right: 0px;
+}
 
 /* Media Queries for responive layout */
 @media only screen and (max-width: 700px) {

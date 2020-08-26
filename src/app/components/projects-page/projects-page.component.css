@@ -21,13 +21,20 @@
 
 .side-button-container {
         position: absolute;
-        right: 0px;
         top: 0px;
         display: flex;
         height: calc(100% - 80px);
         justify-content: center;
         align-items: center;
         width: 80px;
+}
+
+.right {
+        right: 0px;
+}
+
+.left {
+        left: 0px;
 }
 
 .projects-header-container {
