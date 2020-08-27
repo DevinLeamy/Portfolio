@@ -1,0 +1,2 @@
+Add Small Nav
+Add Secondary Animation for github link on project view
