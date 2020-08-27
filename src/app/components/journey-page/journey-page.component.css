@@ -130,14 +130,14 @@
         background-repeat: no-repeat;
 }
 
-.trait-container:hover .trait-icon {
+/* .trait-container:hover .trait-icon {
         width: 80px;
         height: 80px;
-}
+} */
 
-.trait-container:hover {
+/* .trait-container:hover {
         border-bottom: 4px solid hotpink;
-}
+} */
 
 .trait-text-container {
         width: calc(100% - 70px);
@@ -209,10 +209,10 @@
         border-left: 1px solid rgb(231, 231, 204);
 }
 
-.interest-container:hover {
+/* .interest-container:hover {
         border-right: 3px solid rgb(182, 182, 161);
         border-left: 3px solid rgb(182, 182, 161);
-}
+} */
 
 .interest-header {
         margin: auto;
