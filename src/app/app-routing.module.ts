@@ -6,10 +6,10 @@ import { JourneyPageComponent } from './components/journey-page/journey-page.com
 
 
 const routes: Routes = [
-        { path: 'projects', component: ProjectsPageComponent, data: { animation: 'ProjectPage'} },
-        { path: 'splash', component: SplashPageComponent, data: { animation: 'SplashPage'} },
-        { path: 'about', component: JourneyPageComponent, data: { animation: 'AboutPage'} },
-        { path: '**', component: SplashPageComponent, data: { animation: 'SplashPage'} }
+        { path: 'projects', component: ProjectsPageComponent, data: { animation: 'ProjectPage' } },
+        { path: 'splash', component: SplashPageComponent, data: { animation: 'SplashPage' } },
+        { path: 'about', component: JourneyPageComponent, data: { animation: 'AboutPage' } },
+        { path: '**', component: SplashPageComponent, data: { animation: 'SplashPage' } }
 ]
 
 @NgModule({

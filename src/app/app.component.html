@@ -11,9 +11,7 @@
                                 📩&nbsp;&nbsp;devinleamy@gmail.com<br/>
                                 📞&nbsp;&nbsp;403-615-7302
                         </div>
-                        
                 </div>
-                <!-- 📫📩☎️📫📳📫☎️📞 -->
         </router-outlet>
 </div>
 
@@ -27,3 +25,21 @@
 <div class='contact-me-container-small'  *ngIf="this.media.isActive('lt-md')" fxShow="true" fxHide.gt-sm="true" [@showContactMe]="this.selected? 'visible':'hidden'">
         <app-contact-me *ngIf='this.selected' (getSelectedChange)="contactMeCallback($event)"></app-contact-me>
 </div>
+<div class='nav-container' *ngIf="this.media.isActive('gt-sm')" fxShow="true" fxHide.lt-md="true" [@showContactMe]="!this.selected? 'visible':'hidden'">
+        <div class='nav-item transform-color' [routerLink]="'/projects'" [style]="'color: ' + getColor(0)" (click)='goToPage(0)'>
+                Projects
+                <div class='nav-item-underline transform-width'></div>
+                <div class='nav-item-selected-underline transform-width' *ngIf="this.pageService.onProjectsPage()"></div>
+        </div>
+        <div class='nav-item transform-color' [routerLink]="'/splash'" [style]="'color: ' + getColor(1)" (click)='goToPage(1)'>
+                Home
+                <div class='nav-item-underline transform-width'></div>
+                <div class='nav-item-selected-underline transform-width' *ngIf="this.pageService.onHomePage()"></div>
+        </div>
+        <div class='nav-item transform-color' [routerLink]="'/about'" [style]="'color: ' + getColor(2)" (click)='goToPage(2)'>
+                About
+                <div class='nav-item-underline transform-width'></div>
+                <div class='nav-item-selected-underline transform-width' *ngIf="this.pageService.onAboutPage()"></div>
+        </div>
+</div>
+<!-- Make sandwitch nav -->
