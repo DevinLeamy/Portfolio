@@ -32,9 +32,9 @@ export class AppComponent implements OnInit, OnDestroy {
                         .subscribe(rightExpanded => this.rightExpanded = rightExpanded)
                 this.pageService.updateRightExpanded()
                 const route = window.location.pathname
-                if (route === '/' || route === "/splash") this.pageService.goToHomePage()
-                else if (route === '/projects') this.pageService.goToProjectsPage()
-                else if (route === '/about') this.pageService.goToAboutPage()
+                if (route === '/' || route === "/Portfolio-Website/splash") this.pageService.goToHomePage()
+                else if (route === '/Portfolio-Website/projects') this.pageService.goToProjectsPage()
+                else if (route === '/Portfolio-Website/about') this.pageService.goToAboutPage()
                 else this.pageService.goToHomePage()
                 console.log(route)
         }
