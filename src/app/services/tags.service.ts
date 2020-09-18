@@ -60,6 +60,12 @@ export class TagsService {
                         text: 'TypeScript',
                         color: "#2b7489",
                         imageUrl: 'assets/images/typescript.png'
+                },
+                {
+                        _id: 9,
+                        text: 'C#',
+                        color: "#2b7489",
+                        imageUrl: 'assets/images/csharp2.png'
                 }
         ]
 
@@ -118,7 +124,12 @@ export class TagsService {
                         _id: 10,
                         text: "Xcode",
                         imageUrl: 'assets/images/xcode.png'
-                }
+                },
+                {
+                        _id: 11,
+                        text: "Unity",
+                        imageUrl: 'assets/images/unity.png'
+                },
         ]
 
         //Get tech tag

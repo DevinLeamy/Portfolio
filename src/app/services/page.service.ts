@@ -10,14 +10,10 @@ export class PageService {
         rightExpandedUpdated = new Subject<boolean>()
 
         //Returns observable of rightExpanded
-        getRightExpandedUpdated() {
-                return this.rightExpandedUpdated.asObservable()
-        }
+        getRightExpandedUpdated() { return this.rightExpandedUpdated.asObservable() }
 
         //Returns observable of rightExpanded
-        getLeftExpandedUpdated() {
-                return this.leftExpandedUpdated.asObservable()
-        }
+        getLeftExpandedUpdated() { return this.leftExpandedUpdated.asObservable() }
 
         // Sets current page to home page
         goToHomePage() {
@@ -92,12 +88,8 @@ export class PageService {
         }
 
         //Updates rightExpanded value through observables
-        updateRightExpanded() {
-                this.rightExpandedUpdated.next(this.rightExpanded)
-        }
+        updateRightExpanded() { this.rightExpandedUpdated.next(this.rightExpanded) }
 
         //Updates leftExpanded value through observables
-        updateLeftExpanded() {
-                this.leftExpandedUpdated.next(this.leftExpanded)
-        }
+        updateLeftExpanded() { this.leftExpandedUpdated.next(this.leftExpanded) }
 }
