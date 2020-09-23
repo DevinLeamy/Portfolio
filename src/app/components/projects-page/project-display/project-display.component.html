@@ -13,12 +13,13 @@
                 </div>
                 <div class='middle-right-container'>
                         <div class='image-container'>
-                                <div class='image' #imageContainer></div>
+                                <div class='image raised' #imageContainer></div>
                         </div>
                         <div class='link-container'>
                                 <div class='link-text'>See Code on Github</div>
                                 <a class='link' [href]='this.selectedProject.link'>
                                         <div class='link-platform transform-width'></div>
+                                        <!-- <div class='link-platform-original'></div> -->
                                 </a>   
                         </div>
                         
@@ -26,7 +27,6 @@
         </div>
         <div class='bottom-container'>
                 <div class='lang-tags-container'>
-                        <!-- <div class='lang-tags-text'>Languages:</div> -->
                         <div class='lang-tags'>
                                 <div class='lang-tag' *ngFor='let tag of getLanguageTags()'>
                                         <app-image-tag [text]='tag.text' [imageUrl]='tag.imageUrl'></app-image-tag>
@@ -34,7 +34,6 @@
                         </div>
                 </div>
                 <div class='tech-tags-container'>
-                        <!-- <div class='tech-tags-text'>Tech:</div> -->
                         <div class='tech-tags'>
                                 <div class='tech-tag' *ngFor="let tag of getTechTags()">
                                         <app-image-tag [text]='tag.text' [imageUrl]='tag.imageUrl'></app-image-tag>
