@@ -3,8 +3,10 @@
         height: 100%;
         background-color: white;
         border-radius: 20px;
-        border-top: 3px solid rgb(47, 225, 248);
-        border-left: 3px solid rgb(47, 225, 248);
+        /* border-top: 3px solid rgb(47, 225, 248);
+        border-left: 3px solid rgb(47, 225, 248); */
+        border-top: 3px solid rgb(235, 235, 235);
+        border-left: 3px solid rgb(235, 235, 235);
         /* border-top: 3px solid white;
         border-left: 3px solid white; */
         background-position: center center; 
@@ -48,6 +50,7 @@
 
 .container:hover .platform {
         width: 100%;
-        background-color: rgb(88, 88, 88);
+        /* background-color: rgb(88, 88, 88); */
+        background-color: rgb(238, 238, 238);
         /* background-color: hotpink; */
 }

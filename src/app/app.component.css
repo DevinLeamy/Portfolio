@@ -49,8 +49,11 @@
 
 .contact-me-button, .info-button {
         /* background-color: rgb(56, 63, 65); */
-        background-color: rgb(40, 40, 40);
-        color: white;
+        /* background-color: rgb(40, 40, 40); */
+        background-color: rgb(245, 245, 245);
+        /* color: white; */
+        color: rgb(48, 48, 48);
+        font-family: 'poppins-semibold';
         font-size: 18px;
         line-height: 18px;
         padding: 10px;
@@ -61,9 +64,10 @@
 
 .contact-me-button:hover, .info-button:hover {
         /* background-color: rgb(47, 53, 54); */
-        background-color: rgb(32, 32, 32);
-        line-height: 22px;
-        font-size: 22px;
+        /* background-color: rgb(32, 32, 32); */
+        /* background-color: rgb(245, 245, 245); */
+        line-height: 20px;
+        font-size: 20px;
         opacity: 1;
         cursor: pointer;
 }

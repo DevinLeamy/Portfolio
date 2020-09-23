@@ -15,9 +15,7 @@
         border-radius: 10px;
 }
 
-.sub-container {
-        margin: auto;
-}
+.sub-container { margin: auto; }
 
 .side-button-container {
         position: absolute;
@@ -29,13 +27,9 @@
         width: 80px;
 }
 
-.right {
-        right: 0px;
-}
+.right { right: 0px; }
 
-.left {
-        left: 0px;
-}
+.left { left: 0px; }
 
 .projects-header-container {
         position: relative;
@@ -51,7 +45,7 @@
         padding: 10px;
         border-bottom: 3px solid rgb(253, 0, 127);
         /* border-bottom: 3px solid hotpink; */
-        font-family: 'poppins-medium';
+        font-family: 'poppins-semibold';
         border-radius: 5px;
 }
 
