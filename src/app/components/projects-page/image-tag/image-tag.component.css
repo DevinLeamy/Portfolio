@@ -9,11 +9,14 @@
 
 .tooltip {
         position: absolute;
+        font-family: 'poppins-semibold';
         transform: translateY(-40px) translateX(calc(-50% + 22.5px));
         border-radius: 5px;
         padding: 5px;
         background-color: rgb(32, 32, 32);
-        color: white;
+        /* background-color: black; */
+        /* color: white; */
+        color: rgb(245, 245, 245);
         text-align: center;
         white-space: nowrap;
 }

@@ -71,7 +71,7 @@ export class ProjectsService {
                         imageUrl: "assets/images/Boids3.png",
                         iconUrl: "assets/images/boid.png",
                         link: "https://github.com/DevinLeamy/Boids",
-                        text: "I created a simulation of boids, an artificial life program. My simulation is complete with, visual queues indication the proximity of neighbouring boids and, dials allowings users to change the intensity of the boids three driving behaviours: (1) Cohesion - staying together, (2), Avoidance - avoiding each other and, (3) Alignment - traveling inline with one another. Might I add, in real time! ",
+                        text: "I created a simulation of boids, an artificial life program. My simulation is complete with, visual queues indication the proximity of neighbouring boids and, dials allowings users to change the intensity of the boid's three driving behaviours: (1) Cohesion - staying together, (2), Avoidance - avoiding each other and, (3) Alignment - traveling inline with one another. Might I add, in real time! ",
                         languages: ["C#"],
                         tech: ["Unity"]
                 }
