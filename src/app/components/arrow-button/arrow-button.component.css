@@ -1,7 +1,8 @@
 .app-button {
-        background-color: rgb(56, 63, 65);
-        font-size: 25px;
-        color: white;
+        /* background-color: rgb(56, 63, 65); */
+        font-size: 30px;
+        /* color: white; */
+        background-color: white;
         padding: 10px;
         border-radius: 50%;
         width: 25px;
@@ -11,11 +12,10 @@
 }
 
 .app-button:hover {
-        width: 35px;
-        height: 35px;
-        background-color: rgb(47, 53, 54);
-        line-height: 35px;
-        font-size: 45px;
+        width: 30px;
+        height: 30px;
+        /* background-color: rgb(47, 53, 54); */
+        line-height: 30px;
         opacity: 1;
         cursor: pointer;
 }

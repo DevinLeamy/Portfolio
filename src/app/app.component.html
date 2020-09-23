@@ -15,9 +15,7 @@
         </router-outlet>
 </div>
 
-<div class="logo no-select">D.L.
-        2003
-</div>
+<div class="logo no-select">D.L. 2003</div>
 
 <div class='contact-me-container' *ngIf="this.media.isActive('gt-sm')" fxShow="true" fxHide.lt-md="true" [@showContactMe]="this.selected? 'visible':'hidden'">
         <app-contact-me *ngIf='this.selected' (getSelectedChange)="contactMeCallback($event)"></app-contact-me>
@@ -42,4 +40,3 @@
                 <div class='nav-item-selected-underline transform-width' *ngIf="this.pageService.onAboutPage()"></div>
         </div>
 </div>
-<!-- Make sandwitch nav -->
