@@ -1,3 +1,3 @@
 # Portfolio-Website
 Built with Angular JS <br/>
-https://devinleamy.github.io/Portfolio-Website/ 
+https://devinleamy.github.io/Portfolio/ 
