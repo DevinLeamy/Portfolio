@@ -49,7 +49,7 @@ export class ProjectsService {
                         imageUrl: "assets/images/chess-image.png",
                         iconUrl: "assets/images/chess-me.png",
                         link: "https://github.com/DevinLeamy/Chess.me",
-                        text: "I brought the offical game of coffee tables around the world to the iPhone with Chess.me. Chess.me is a unique mobile chess app that support three engaging game modes, namely, .COUPLE: pass-and-play chess, .BLUETOOTH: local wireless chess with friends and, .ME: a challenging gamemode that puts players up against an infinitly clever Chess AI.",
+                        text: "I brought the official game of coffee tables around the world to the iPhone with Chess.me. Chess.me is a unique mobile chess app that support three engaging game modes, namely, .COUPLE: pass-and-play chess, .BLUETOOTH: local wireless chess with friends and, .ME: a challenging gamemode that puts players up against an infinitly clever Chess AI.",
                         languages: ["Swift"],
                         tech: ["Xcode"]
                 },

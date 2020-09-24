@@ -20,41 +20,23 @@ body {
 }
 
 /* Removes blue border of selected buttons */
-button:focus {
-        outline: 0;
-}
+button:focus { outline: 0; }
 
-div:focus {
-        outline: 0;
-}
+div:focus { outline: 0; }
 
-span:focus {
-        outline: 0;
-}
+span:focus { outline: 0; }
 
-img:focus {
-        outline: 0;
-}
+img:focus { outline: 0; }
 
-textarea:focus {
-        outline: 0;
-}
+textarea:focus { outline: 0; }
 
-p:focus {
-        outline: 0;
-}
+p:focus { outline: 0; }
 
-input:focus {
-        outline: 0;
-}
+input:focus { outline: 0; }
 
-select:focus {
-        outline: 0;
-}
+select:focus { outline: 0; }
 
-app-arrow-button:focus {
-        outline: 0;
-}
+app-arrow-button:focus { outline: 0; }
 
 /* Fonts */
 @font-face {
@@ -189,21 +171,13 @@ div {
 }
 
 /* Remove default style from links */
-a:link {
-        text-decoration: none;
-}
+a:link { text-decoration: none; }
       
-a:visited {
-        text-decoration: none;
-}
+a:visited { text-decoration: none; }
 
-a:hover {
-        text-decoration: none;
-}
+a:hover { text-decoration: none; }
 
-a:active {
-        text-decoration: none;
-}
+a:active { text-decoration: none; }
 
 /* Raised Effect */
 .raised {
