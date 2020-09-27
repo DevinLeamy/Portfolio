@@ -149,10 +149,10 @@
 .image {
         width: 150px;
         height: 150px;
-        background-size: contain;
+        background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
-        background-image: url("../../../assets/images/profile.jpg");
+        background-image: url("../../../assets/images/five.jpg");
         border-radius: 50%;
         box-sizing: border-box;
         background-color: rgb(171, 231, 255);
