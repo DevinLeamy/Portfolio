@@ -93,7 +93,7 @@
         box-sizing: border-box;
         padding: 20px;
         z-index: -1;
-        gap: 50px;
+        /* gap: 50px; */
 }
 
 .nav-item {
@@ -104,7 +104,8 @@
         font-size: 19px;
         font-family: 'poppins-semibold';
         border-radius: 5px;
-        transform: translateX(30px) translateY(10px)
+        transform: translateX(30px) translateY(10px);
+        margin-right: 50px; /* can replace with gap */
 }
 
 .nav-item-underline {
