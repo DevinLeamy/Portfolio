@@ -1,0 +1,123 @@
+<div class="main-container">
+        <div class="sub-container">
+                <div class="column-container">
+                        <div class="column-header-container">
+                                <div class="column-header-icon languages-icon"></div>
+                                <div class="column-header-text">
+                                        Languages
+                                </div>
+                        </div>
+                        <div class="list-container">
+                                <app-language 
+                                        *ngFor="let lang of this.tagsService.getLangTags()" 
+                                        [name]='this.lang.text'
+                                        [color]='this.lang.color'
+                                        [iconUrl]='this.lang.imageUrl'
+                                        [experience]='this.lang.experience'
+
+                                ></app-language>
+                        </div>
+                </div>
+                <div class="column-container">
+                        <div class="column-header-container">
+                                <div class="column-header-icon technologies-icon"></div>
+                                <div class="column-header-text">
+                                        Tech.
+                                </div>
+                        </div>
+                        <div class="list-container">
+                                <app-language 
+                                        *ngFor="let tech of this.getDefinedTechnologies()" 
+                                        [name]='this.tech.text'
+                                        [color]='this.tech.color'
+                                        [iconUrl]='this.tech.imageUrl'
+                                        [experience]='this.tech.experience'
+                                ></app-language>
+                        </div>
+                </div>
+                <div class="personal-container">
+                        <div class="flip-board text-board">
+                                <div class='text-board-top'>
+                                        <div class="image-container">
+                                                <div class="image"></div>
+                                                <div class="image-text">Devin Leamy</div>
+                                        </div>
+                                        <div class="text-container">
+                                                Hey I'm Devin, a Computer Science Co-op student 
+                                                at the University of Waterloo (class of 2025) who loves to code.
+                                                Full stack web development is my forte, and my interests include machine learning, 
+                                                distributed systems, and algorithm design.
+                                        </div>
+                                </div>
+                                <div class='icons-container'>
+                                        <a class='icon github-icon' href='https://github.com/DevinLeamy'></a>
+                                        <a class='icon linkedin-icon' href='https://www.linkedin.com/in/devin-leamy-439b8a1b5/'></a>
+                                        <a class='icon instagram-icon' href='https://www.instagram.com/devin.leamy/'></a>
+                                        <a class="icon resumer-icon" href="../../../assets/other/Resume.pdf"></a>
+                                </div>
+                        </div>
+                        <div class="flip-board clickable-board" (click)='this.educationVis = !this.educationVis'>
+                                <div class="board-front" [@isVisible]="this.educationVis? 'false':'true'">📚 Education</div>
+                                <div class="board-back" [@isVisible]="!this.educationVis? 'false':'true'">
+                                        <div class="university-container">
+                                                <div class="university-text">
+                                                        University of Waterloo Computer Science Co-op Class of 2025
+                                                </div>
+                                                <div class="university-image"></div>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="flip-board clickable-board" (click)='this.passionVis = !this.passionVis'>
+                                <div class="board-front" [@isVisible]="this.passionVis? 'false':'true'">❤️ Passion</div>
+                                <div class="board-back" [@isVisible]="!this.passionVis? 'false':'true'">
+                                        <div class='passion-container'>
+                                                I love to code; whether it be software engineering 
+                                                or solving algorithmic problems. <br/>
+                                                Programming is my passion.
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="flip-board clickable-board" (click)='this.pastimesVis = !this.pastimesVis'>
+                                <div class="board-front" [@isVisible]="this.pastimesVis? 'false':'true'">⛰ Pastimes</div>
+                                <div class="board-back" [@isVisible]="!this.pastimesVis? 'false':'true'">
+                                        <div class="pastimes-container">
+                                                <div class="pastimes-text">
+                                                        Learning • Lifting • Programming • Networking • Exploring • Researching 
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="flip-board clickable-board" (click)='this.quoteVis = !this.quoteVis'>
+                                <div class="board-front" [@isVisible]="this.quoteVis? 'false':'true'">❝ Quote ❞</div>
+                                <div class="board-back" [@isVisible]="!this.quoteVis? 'false':'true'">
+                                        <div class="quote-container">
+                                                <div class="quote-text">
+                                                        "Give a man a fish and you feed him for a day; 
+                                                        teach a man to fish and you feed him for a lifetime."
+                                                        - Awiseman 🐠
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="flip-board clickable-board" (click)='this.hireVis = !this.hireVis'>
+                                <div class="board-front" [@isVisible]="this.hireVis? 'false':'true'">💯 Hire me! </div>
+                                <div class="board-back" [@isVisible]="!this.hireVis? 'false':'true'">
+                                        <div class="hire-me-text">
+                                                I'm looking for free lance work as well as a co-op position for the fall term of 2021. <br/> 🌟Reach out! 
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+</div>
+
+<div class="side-button-container left">
+        <app-arrow-button (click)="this.pageService.leftButtonClicked()" [routerLink]="'/splash'">
+                <
+        </app-arrow-button>
+</div>
+<div class="side-button-container right">
+        <app-arrow-button (click)="this.pageService.rightButtonClicked()" [routerLink]="'/projects'">
+                >
+        </app-arrow-button>
+</div>

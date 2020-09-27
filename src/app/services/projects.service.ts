@@ -27,9 +27,9 @@ export class ProjectsService {
                         imageUrl: "assets/images/ddm-rumble-image.png",
                         iconUrl: "assets/images/ddm-rumble.png",
                         link: "https://github.com/DevinLeamy/DDM",
-                        text: "Rumble - My Dope Messenger, is a thread-based messenging platform that sits upon a responsive and intuitive Angular UI. Rumble helps break down the barriers to personal communitation built up throughout the COVID-19 pandemic by making discourse with others easier and more accessible. Create chats, make friends, Rumble.",
+                        text: "Rumble - My Dope Messenger, is a thread-based messenging platform that sits upon a responsive and intuitive Angular UI. Rumble helps break down the barriers to personal communication built up throughout the COVID-19 pandemic by making discourse with others easier and more accessible. Create chats, make friends, Rumble.",
                         languages: ["Typescript", "Javascript", "HTML", "CSS"],
-                        tech: ["Angular", "Node JS", "Express", "MongoDB", "Heroku"]
+                        tech: ["Angular JS", "Node JS", "Express JS", "MongoDB", "Heroku"]
                 },
                 {
                         _id: 2,

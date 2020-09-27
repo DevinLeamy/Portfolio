@@ -3,4 +3,5 @@ export class LanguageTag {
         text: string
         color: string
         imageUrl: string
+        experience: number
 }

@@ -1,0 +1,46 @@
+.pro-lang-container {
+        width: 100%;
+        height: 60px;
+        border-radius: 3px;
+}
+
+.pro-lang-container:hover { background-color: rgba(0, 0, 0, 0.4); }
+
+.pro-lang-container:hover .pro-lang-experience { background-color: rgb(241, 241, 241); }
+
+.pro-lang-header {
+        height: 30px;
+        display: flex;
+}
+.pro-lang-text {
+        width: calc(100% - 30px);
+        height: 30px;
+        line-height: 30px;
+        text-align: left;
+        color: white;
+}
+
+.pro-lang-icon {
+        width: 30px;
+        height: 30px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+}
+
+.pro-lang-experience {
+        position: relative;
+        margin-top: 5px;
+        width: 100%;
+        background-color: rgb(49, 49, 49);
+        /* background-color: rgb(226, 226, 226); */
+        height: 5px;
+        border-radius: 2px;
+}
+
+.experience-level {
+        position: relative;
+        margin-top: -5px;
+        height: 5px;
+        border-radius: 2px;
+}

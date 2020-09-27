@@ -21,21 +21,13 @@ body {
 
 /* Removes blue border of selected buttons */
 button:focus { outline: 0; }
-
 div:focus { outline: 0; }
-
 span:focus { outline: 0; }
-
 img:focus { outline: 0; }
-
 textarea:focus { outline: 0; }
-
 p:focus { outline: 0; }
-
 input:focus { outline: 0; }
-
 select:focus { outline: 0; }
-
 app-arrow-button:focus { outline: 0; }
 
 /* Fonts */
@@ -71,6 +63,39 @@ app-arrow-button:focus { outline: 0; }
 @font-face {
         font-family: 'quacker';
         src: url(src/assets/fonts/quacker-font/Quacker-vmAvD.otf);
+        font-style: normal;
+}
+@font-face {
+        font-family: 'beautiful-regular';
+        src: url(src/assets/fonts/beautiful-people-font/regular.ttf);
+        font-style: normal;
+}
+@font-face {
+        font-family: 'beautiful-slanted';
+        src: url(src/assets/fonts/beautiful-people-font/slanted.ttf);
+        font-style: normal;
+}
+@font-face {
+        font-family: 'dreamwood';
+        src: url(src/assets/fonts/dreamwood-font/DreamwoodDemoRegular-Zj3q.ttf);
+        font-style: normal;
+}
+
+@font-face {
+        font-family: 'typographica';
+        src: url(src/assets/fonts/typographica-font/Typographica-Blp5.ttf);
+        font-style: normal;
+}
+
+@font-face {
+        font-family: 'landasans-medium';
+        src: url(src/assets/fonts/landasans-font/medium.otf);
+        font-style: normal;
+}
+
+@font-face {
+        font-family: 'landasans-light';
+        src: url(src/assets/fonts/landasans-font/light.otf);
         font-style: normal;
 }
 
@@ -152,7 +177,7 @@ app-arrow-button:focus { outline: 0; }
         transition: font-size 0.2s;
 }
 
-.no-select {
+/* .no-select {
         -webkit-touch-callout: none;
         -webkit-user-select: none; 
         -khtml-user-select: none; 
@@ -168,15 +193,12 @@ div {
         -moz-user-select: none; 
         -ms-user-select: none; 
         user-select: none;  
-}
+} */
 
 /* Remove default style from links */
 a:link { text-decoration: none; }
-      
 a:visited { text-decoration: none; }
-
 a:hover { text-decoration: none; }
-
 a:active { text-decoration: none; }
 
 /* Raised Effect */

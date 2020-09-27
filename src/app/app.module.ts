@@ -15,6 +15,8 @@ import { TagComponent } from "./components/projects-page/project/tag/tag.compone
 import { ProjectDisplayComponent } from "./components/projects-page/project-display/project-display.component"
 import { ImageTagComponent } from './components/projects-page/image-tag/image-tag.component'
 import { ContactMeComponent } from "./components/splash-page/contact-me/contact-me.component"
+import { AboutPageComponent } from "./components/about-page/about-page.component"
+import { LanguageComponent } from "./components/about-page/language/language.component" 
 
 @NgModule({
   declarations: [
@@ -28,7 +30,9 @@ import { ContactMeComponent } from "./components/splash-page/contact-me/contact-
     TagComponent,
     ProjectDisplayComponent,
     ImageTagComponent,
-    ContactMeComponent
+    ContactMeComponent,
+    AboutPageComponent,
+    LanguageComponent
   ],
   imports: [
     BrowserModule,

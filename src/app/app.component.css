@@ -10,7 +10,6 @@
         z-index: 2;
         top: 10px;
         right: 10px;
-        /* color: rgb(241, 241, 241); */
         color: rgb(32, 32, 32);
         font-family: 'momcake';
         font-size: 30px;
@@ -51,24 +50,18 @@
 }
 
 .contact-me-button, .info-button {
-        /* background-color: rgb(56, 63, 65); */
-        /* background-color: rgb(40, 40, 40); */
         background-color: rgb(245, 245, 245);
-        /* color: white; */
-        color: rgb(48, 48, 48);
-        font-family: 'poppins-semibold';
-        font-size: 18px;
-        line-height: 18px;
+        color: rgb(24, 24, 24);
+        font-family: 'momcake';
+        font-size: 20px;
+        line-height: 20px;
         padding: 10px;
-        border-radius: 10px;
+        /* border-radius: 3px; */
         text-align: center;
         margin: 3px
 }
 
 .contact-me-button:hover, .info-button:hover {
-        /* background-color: rgb(47, 53, 54); */
-        /* background-color: rgb(32, 32, 32); */
-        /* background-color: rgb(245, 245, 245); */
         line-height: 20px;
         font-size: 20px;
         opacity: 1;
@@ -78,11 +71,12 @@
 .tooltip {
         position: absolute;
         transform: translateY(-65px) translateX(60px);
-        border-radius: 10px;
+        border-radius: 2px;
         padding: 5px;
-        font-size: 16px;
-        background-color: rgb(12, 12, 12);
-        color: white;
+        font-size: 18px;
+        background-color: rgb(235, 235, 235);
+        color: rgb(0, 0, 0);
+        font-family: 'momcake';
         text-align: center;
         white-space: nowrap;
 }
@@ -90,10 +84,8 @@
 .nav-container {
         position: absolute;
         width: 100%;
-        /* top: 10px; */
         height: 100px;
         background-color: rgb(245, 245, 245);
-        /* left: 20px; */
         top: 0px;
         left: 0px;
         display: flex;
@@ -108,37 +100,18 @@
         float: right;
         line-height: 40px;
         height: 40px;
-        /* margin-right: 50px;
-        padding-bottom: 50px; */
         text-align: center;
         font-size: 19px;
-        /* color: rgb(22, 22, 22); */
-        /* color: rgb(32, 32, 32); */
         font-family: 'poppins-semibold';
-        /* padding: 10px; */
         border-radius: 5px;
-        /* background-color: rgb(49, 49, 49); */
         transform: translateX(30px) translateY(10px)
 }
 
 .nav-item-underline {
         width: 0px;
-        /* background-color: white; */
-        background-color: rgb(143, 171, 175);
-        border-radius: 3px;
-        height: 5px;
+        background-color: rgb(1, 108, 255);
+        height: 3px;
         visibility: hidden;
-}
-
-.nav-item-selected-underline {
-        position: relative;
-        transform: translateY(-5px);
-        width: 100%;
-        background-color: black;
-        z-index: -1;
-        border-radius: 3px;
-        height: 5px;
-        visibility: hidden; /* Currently invisible */
 }
 
 .nav-item:hover .nav-item-underline {

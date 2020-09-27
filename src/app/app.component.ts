@@ -42,9 +42,9 @@ export class AppComponent implements OnInit, OnDestroy {
         // Returns the color of the nav elements
         getColor(page: number) {
                 // Green rgb(88, 218, 88) Blue rgb(0, 140, 255) Light Blue rgb(153,207,224)
-                if (page == 0 && this.pageService.onProjectsPage()) return 'rgb(1, 108, 255)'
-                else if (page == 1 && this.pageService.onHomePage()) return 'rgb(1, 108, 255)'
-                else if (page == 2 && this.pageService.onAboutPage()) return 'rgb(1, 108, 255)'
+                if (page == 0 && this.pageService.onProjectsPage()) return 'rgb(0, 88, 252)'
+                else if (page == 1 && this.pageService.onHomePage()) return 'rgb(0, 88, 252)'
+                else if (page == 2 && this.pageService.onAboutPage()) return 'rgb(0, 88, 252)'
                 else return 'rgb(70, 70, 70)'
         }
 
