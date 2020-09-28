@@ -36,13 +36,13 @@ let projectsAnimation = [
                 transition('hidden => visible, hidden => visibleAgain, visible <=> visibleAgain', [
                         query('.icon-container, .middle-left-container, .lang-tags-container', [
                                 style({
-                                        transform: 'translateX(-200px)',
+                                        transform: 'translateX(-100px)',
                                         opacity: '0'
                                 })
                         ]),
                         query('.title-container, .image-container, .link-text, .link, .tech-tags-container', [
                                 style({
-                                        transform: 'translateX(200px)',
+                                        transform: 'translateX(100px)',
                                         opacity: '0'
                                 })
                         ]),
