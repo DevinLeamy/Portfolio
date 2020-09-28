@@ -15,8 +15,8 @@
         </router-outlet>
 </div>
 
-<div class="logo no-select logo-color-large" *ngIf="this.media.isActive('gt-sm')" fxShow="true" fxHide.lt-md="true">D.L. 2003</div>
-<div class="logo no-select logo-color-small" *ngIf="this.media.isActive('lt-md')" fxShow="true" fxHide.gt-sm="true">D.L. 2003</div>
+<div class="logo no-select logo-color-large" *ngIf="this.media.isActive('gt-sm')" fxShow="true" fxHide.lt-md="true">DL 2003</div>
+<div class="logo no-select logo-color-small" *ngIf="this.media.isActive('lt-md')" fxShow="true" fxHide.gt-sm="true">DL 2003</div>
 
 <div class='contact-me-container' *ngIf="this.media.isActive('gt-sm')" fxShow="true" fxHide.lt-md="true" [@showContactMe]="this.selected? 'visible':'hidden'">
         <app-contact-me *ngIf='this.selected' (getSelectedChange)="contactMeCallback($event)"></app-contact-me>

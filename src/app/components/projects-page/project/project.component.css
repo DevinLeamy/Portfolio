@@ -3,14 +3,18 @@
         height: 100%;
         background-color: white;
         border-radius: 20px;
+        /* box-sizing: border-box; */
         border-top: 3px solid rgb(235, 235, 235);
         border-left: 3px solid rgb(235, 235, 235);
+        border-bottom: 1px solid rgb(235, 235, 235);
+        border-right: 1px solid rgb(235, 235, 235);
+        /* border: 1px solid white; */
         background-position: center center; 
         background-size: cover;
 }
 
 .container:hover {
-        border-radius: 15px;
+        /* border-radius: 15px; */
         cursor: pointer;
 }
 
@@ -25,9 +29,13 @@
         height: 25px;
         line-height: 25px;
         padding: 15px;
-        background-color: white;
+        background-color: rgb(240, 240, 240);
+        color: rgb(32, 32, 32); 
+        /* background-color: rgb(32, 32, 32); */
+        /* color: white; */
+
         font-size: 25px;
-        color: rgb(14, 134, 150);
+        /* color: rgb(14, 134, 150); */
         text-align: center;
         font-family: 'momcake';
         border-radius: 5px;

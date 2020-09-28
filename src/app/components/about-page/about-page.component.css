@@ -156,10 +156,6 @@
         background-position: center center;
         background-repeat: no-repeat;
         background-image: url("../../../assets/images/five.jpg");
-        /* border-radius: 50%; */
-        box-sizing: border-box;
-        /* background-color: rgb(171, 231, 255);
-        border: 5px solid rgb(171, 231, 255); */
 }
 
 .image-text { text-align: center; color: rgb(240, 240, 240); }
@@ -190,6 +186,8 @@
         cursor: pointer; 
         -webkit-filter: invert(1);
         filter: invert(1);
+        /* margin-right: 12px;
+        margin-left: 5px; */
 }
 
 .github-icon { background-image: url("../../../assets/images/github3.png"); }

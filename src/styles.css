@@ -177,6 +177,13 @@ app-arrow-button:focus { outline: 0; }
         transition: font-size 0.2s;
 }
 
+.transform-margin {
+        -webkit-transition: margin 0.2s;
+        -moz-transition: margin 0.2s;
+        -o-transition: margin 0.2s;
+        transition: margin 0.2s;
+}
+
 /* .no-select {
         -webkit-touch-callout: none;
         -webkit-user-select: none; 
