@@ -120,8 +120,8 @@
 
 
 .clickable-board {
-        height: 75px;
-        line-height: 75px;
+        height: 76px;
+        line-height: 76px;
 }
 
 .clickable-board:hover { cursor: pointer; }
@@ -236,9 +236,17 @@
 
 /* Passion flip board */
 .passion-container {
-        font-family: 'poppins-regular';
-        font-size: 16px;
+        display: flex;
+        height: 100%;
+        align-items: center;
+}
+
+.passion-text {
+        margin: auto;
         color: white;
+        text-align: center;
+        font-family: 'poppins-semibold';
+        font-size: 20px;
         line-height: normal; 
 }
 
@@ -252,8 +260,9 @@
 
 .pastimes-text {
         text-align: center;
-        font-size: 16px;
+        font-size: 18px;
         line-height: normal;
+        font-family: 'poppins-semibold';
 }
 
 /* Quote flip board */
@@ -267,24 +276,25 @@
         width: 100%;
         text-align: center;
         /* font-family: 'beautiful-regular'; */
-        font-family: 'poppins-regular';
+        font-family: 'poppins-semibold';
         color: white;
-        font-size: 16px;
+        font-size: 20px;
         line-height: normal;
 }
 
 /* Hire me flip board */
 .hire-me-text {
         box-sizing: border-box;
-        padding: 5px;
+        padding: 3px;
         width: 100%;
         text-align: center;
-        /* font-family: 'typographica'; */
-        font-family: 'poppins-regular';
+        font-family: 'poppins-semibold';
         color: white;
         font-size: 16px;
-        line-height: normal;
+        line-height: 23px;
 }
+
+.flex-grow { flex-grow: 1; }
 
 /* Buttons */
 .side-button-container {
