@@ -24,7 +24,7 @@ export class ProjectsService {
                         _id: 1,
                         title: "DDM - Rumble",
                         subtitle: "A Thread Based Messaging Platform",
-                        imageUrl: "assets/images/ddm-rumble-image.png",
+                        imageUrl: "assets/images/rumble3.png",
                         iconUrl: "assets/images/ddm-rumble.png",
                         link: "https://github.com/DevinLeamy/DDM",
                         text: "Rumble - My Dope Messenger, is a thread-based messenging platform that sits upon a responsive and intuitive Angular UI. Rumble helps break down the barriers to personal communication built up throughout the COVID-19 pandemic by making discourse with others easier and more accessible. Create chats, make friends, Rumble.",

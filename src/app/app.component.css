@@ -12,7 +12,7 @@
         right: 10px;
         color: rgb(32, 32, 32);
         font-family: 'momcake';
-        font-size: 30px;
+        font-size: 25px;
 }
 
 .logo-color-small { color: rgb(245, 245, 245); }
@@ -106,10 +106,9 @@
 }
 
 .nav-item-underline {
-        width: 0px;
+        width: 15px;
         background-color: rgb(1, 108, 255);
         height: 3px;
-        visibility: hidden;
 }
 
 .nav-item:hover .nav-item-underline {

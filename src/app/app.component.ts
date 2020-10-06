@@ -45,7 +45,7 @@ export class AppComponent implements OnInit, OnDestroy {
                 if (page == 0 && this.pageService.onProjectsPage()) return 'rgb(0, 88, 252)'
                 else if (page == 1 && this.pageService.onHomePage()) return 'rgb(0, 88, 252)'
                 else if (page == 2 && this.pageService.onAboutPage()) return 'rgb(0, 88, 252)'
-                else return 'rgb(70, 70, 70)'
+                else return 'rgb(30, 30, 30)'
         }
 
         // Updates page service in response to navigation through nav
