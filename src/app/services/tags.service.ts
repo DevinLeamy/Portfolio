@@ -11,7 +11,7 @@ export class TagsService {
                         text: 'JavaScript',
                         color: "#f1e05a",
                         imageUrl: 'assets/images/javascript.png',
-                        experience: 90
+                        experience: 80
 
                 },
                 {
@@ -19,63 +19,63 @@ export class TagsService {
                         text: 'Java',
                         color: "#b07219",
                         imageUrl: 'assets/images/java.png',
-                        experience: 70
+                        experience: 60
                 },
                 {
                         _id: 2,
                         text: 'Swift',
                         color: "#ffac45",
                         imageUrl: 'assets/images/swift.png',
-                        experience: 40
+                        experience: 30
                 },
                 {
                         _id: 3,
                         text: 'C',
                         color: "#555555",
                         imageUrl: 'assets/images/c.png',
-                        experience: 30
+                        experience: 20
                 },
                 {
                         _id: 4,
                         text: 'C++',
                         color: "#f34b7d",
                         imageUrl: 'assets/images/cpp.png',
-                        experience: 50
+                        experience: 40
                 },
                 {
                         _id: 5,
                         text: 'CSS',
                         color: "#563d7c",
                         imageUrl: 'assets/images/css.png',
-                        experience: 70
+                        experience: 60
                 },
                 {
                         _id: 6,
                         text: 'HTML',
                         color: "#e44b23",
                         imageUrl: 'assets/images/html.png',
-                        experience: 70
+                        experience: 60
                 },
                 {
                         _id: 7,
                         text: 'Python',
                         color: "#3572A5",
                         imageUrl: 'assets/images/python.png',
-                        experience: 80
+                        experience: 70
                 },
                 {
                         _id: 8,
                         text: 'TypeScript',
                         color: "#2b7489",
                         imageUrl: 'assets/images/typescript.png',
-                        experience: 90
+                        experience: 80
                 },
                 {
                         _id: 9,
                         text: 'C#',
                         color: "#0e8a16",
                         imageUrl: 'assets/images/csharp2.png',
-                        experience: 30
+                        experience: 20
                 }
         ]
 
