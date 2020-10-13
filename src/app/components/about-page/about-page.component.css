@@ -177,8 +177,8 @@
         background-position: center center;
         background-repeat: no-repeat;
         /* Inverts image colors */
-        -webkit-filter: invert(0.6);
-        filter: invert(0.6);
+        -webkit-filter: invert(0.3);
+        filter: invert(0.3);
         margin-right: 10px; /* Can replace with gap */
 }
 
