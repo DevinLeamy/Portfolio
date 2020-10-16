@@ -44,7 +44,7 @@
                                                 Full stack web development is my forte, and my interests include machine learning, 
                                                 distributed systems, and algorithm design.
                                         </div>
-                                        <div class="flip-board clickable-board" (click)='this.educationVis = !this.educationVis'>
+                                        <div class="flip-board clickable-board" (click)='this.changeEducation()'>
                                                 <div class="board-front" [@isVisible]="this.educationVis? 'false':'true'">Education</div>
                                                 <div class="board-back" [@isVisible]="!this.educationVis? 'false':'true'">
                                                         <div class="university-container">
@@ -55,7 +55,7 @@
                                                         </div>
                                                 </div>
                                         </div>
-                                        <div class="flip-board clickable-board" (click)='this.passionVis = !this.passionVis'>
+                                        <div class="flip-board clickable-board" (click)='this.changePassion()'>
                                                 <div class="board-front" [@isVisible]="this.passionVis? 'false':'true'">Passion</div>
                                                 <div class="board-back" [@isVisible]="!this.passionVis? 'false':'true'">
                                                         <div class='passion-container'>
@@ -65,7 +65,7 @@
                                                         </div>
                                                 </div>
                                         </div>
-                                        <div class="flip-board clickable-board" (click)='this.hireVis = !this.hireVis'>
+                                        <div class="flip-board clickable-board" (click)='this.changeHireMe()'>
                                                 <div class="board-front" [@isVisible]="this.hireVis? 'false':'true'">Hire me! </div>
                                                 <div class="board-back" [@isVisible]="!this.hireVis? 'false':'true'">
                                                         <div class="hire-me-text">

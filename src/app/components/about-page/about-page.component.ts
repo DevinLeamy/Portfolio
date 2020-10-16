@@ -24,4 +24,28 @@ export class AboutPageComponent {
                         .filter(tag => tag.color !== undefined)
                 return definedTags
         }
+
+        changePassion() {
+                this.passionVis = !this.passionVis
+                if (this.passionVis) {
+                        this.educationVis = false
+                        this.hireVis = false
+                }
+        }
+
+        changeEducation() {
+                this.educationVis = !this.educationVis
+                if (this.educationVis) {
+                        this.passionVis = false
+                        this.hireVis = false
+                }
+        }
+
+        changeHireMe() {
+                this.hireVis = !this.hireVis
+                if (this.hireVis) {
+                        this.passionVis = false
+                        this.educationVis = false
+                } 
+        }
 }
