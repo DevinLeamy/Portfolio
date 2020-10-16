@@ -17,77 +17,6 @@
                                 ></app-language>
                         </div>
                 </div>
-                <div class="personal-container">
-                        <div class="flip-board text-board">
-                                <div class='text-board-top'>
-                                        <div class="image-container">
-                                                <div class="image"></div>
-                                                <div class="image-text">Devin Leamy</div>
-                                        </div>
-                                        <div class="text-container">
-                                                Hey I'm Devin, a Computer Science Co-op student 
-                                                at the University of Waterloo (class of 2025) who loves to code.
-                                                Full stack web development is my forte, and my interests include machine learning, 
-                                                distributed systems, and algorithm design.
-                                        </div>
-                                </div>
-                                <div class='icons-container'>
-                                        <a class='icon github-icon transform-margin' href='https://github.com/DevinLeamy'></a>
-                                        <a class='icon linkedin-icon transform-margin' href='https://www.linkedin.com/in/devin-leamy-439b8a1b5/'></a>
-                                        <a class='icon instagram-icon transform-margin' href='https://www.instagram.com/devin.leamy/'></a>
-                                        <a class="icon resumer-icon transform-margin" href="/assets/other/Resume.pdf"></a>
-                                </div>
-                        </div>
-                        <div class="flip-board clickable-board" (click)='this.educationVis = !this.educationVis'>
-                                <div class="board-front" [@isVisible]="this.educationVis? 'false':'true'">📚 Education</div>
-                                <div class="board-back" [@isVisible]="!this.educationVis? 'false':'true'">
-                                        <div class="university-container">
-                                                <div class="university-text">
-                                                        University of Waterloo Computer Science Co-op Class of 2025
-                                                </div>
-                                                <div class="university-image"></div>
-                                        </div>
-                                </div>
-                        </div>
-                        <div class="flip-board clickable-board" (click)='this.passionVis = !this.passionVis'>
-                                <div class="board-front" [@isVisible]="this.passionVis? 'false':'true'">❤️ Passion</div>
-                                <div class="board-back" [@isVisible]="!this.passionVis? 'false':'true'">
-                                        <div class='passion-container'>
-                                                <div class="passion-text">
-                                                        Software Development <br/> 💻 + ☕️ = 😄
-                                                </div>
-                                        </div>
-                                </div>
-                        </div>
-                        <div class="flip-board clickable-board" (click)='this.pastimesVis = !this.pastimesVis'>
-                                <div class="board-front" [@isVisible]="this.pastimesVis? 'false':'true'">⛰ Pastimes</div>
-                                <div class="board-back" [@isVisible]="!this.pastimesVis? 'false':'true'">
-                                        <div class="pastimes-container">
-                                                <div class="pastimes-text">
-                                                        Learning • Programming • Networking • Lifting 
-                                                </div>
-                                        </div>
-                                </div>
-                        </div>
-                        <div class="flip-board clickable-board" (click)='this.quoteVis = !this.quoteVis'>
-                                <div class="board-front" [@isVisible]="this.quoteVis? 'false':'true'">❝ Quote ❞</div>
-                                <div class="board-back" [@isVisible]="!this.quoteVis? 'false':'true'">
-                                        <div class="quote-container">
-                                                <div class="quote-text">
-                                                        "Never stop improving" -Lowe's
-                                                </div>
-                                        </div>
-                                </div>
-                        </div>
-                        <div class="flip-board clickable-board" (click)='this.hireVis = !this.hireVis'>
-                                <div class="board-front" [@isVisible]="this.hireVis? 'false':'true'">💯 Hire me! </div>
-                                <div class="board-back" [@isVisible]="!this.hireVis? 'false':'true'">
-                                        <div class="hire-me-text">
-                                                I'm looking for a free lance jobs and a co-op position for the fall term of 2021 <br/> 🌟Reach out! 
-                                        </div>
-                                </div>
-                        </div>
-                </div>
                 <div class="column-container right-column">
                         <div class="column-header-container">
                                 <div class="column-header-icon technologies-icon"></div>
@@ -105,6 +34,104 @@
                                 ></app-language>
                         </div>
                 </div>
+                <div class="personal-container">
+                        <div class="text-board">
+                                <div class='text-board-top'>
+                                        <div class="text-container">
+                                                Hi I'm Devin, a strong, innovative and creative student from Calgary, Alberta who loves to code.
+                                                <br>
+                                                <br>
+                                                Full stack web development is my forte, and my interests include machine learning, 
+                                                distributed systems, and algorithm design.
+                                        </div>
+                                        <div class="flip-board clickable-board" (click)='this.educationVis = !this.educationVis'>
+                                                <div class="board-front" [@isVisible]="this.educationVis? 'false':'true'">Education</div>
+                                                <div class="board-back" [@isVisible]="!this.educationVis? 'false':'true'">
+                                                        <div class="university-container">
+                                                                <div class="university-text">
+                                                                        University of Waterloo Computer Science Co-op Class of 2025
+                                                                </div>
+                                                                <div class="university-image"></div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <div class="flip-board clickable-board" (click)='this.passionVis = !this.passionVis'>
+                                                <div class="board-front" [@isVisible]="this.passionVis? 'false':'true'">Passion</div>
+                                                <div class="board-back" [@isVisible]="!this.passionVis? 'false':'true'">
+                                                        <div class='passion-container'>
+                                                                <div class="passion-text">
+                                                                        Software Development <br/> 💻 + ☕️ = 😄
+                                                                </div>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <div class="flip-board clickable-board" (click)='this.hireVis = !this.hireVis'>
+                                                <div class="board-front" [@isVisible]="this.hireVis? 'false':'true'">Hire me! </div>
+                                                <div class="board-back" [@isVisible]="!this.hireVis? 'false':'true'">
+                                                        <div class="hire-me-text">
+                                                                I'm looking for a free lance jobs and a co-op position for the fall term of 2021 <br/> 🌟Reach out! 
+                                                        </div>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class='icons-container'>
+                                        <a class='icon github-icon transform-margin' href='https://github.com/DevinLeamy'></a>
+                                        <a class='icon linkedin-icon transform-margin' href='https://www.linkedin.com/in/devin-leamy-439b8a1b5/'></a>
+                                        <a class='icon instagram-icon transform-margin' href='https://www.instagram.com/devin.leamy/'></a>
+                                        <a class="icon resumer-icon transform-margin" href="/assets/other/Resume.pdf"></a>
+                                </div>
+                        </div>
+                        <!-- <div class="flip-board clickable-board" (click)='this.educationVis = !this.educationVis'>
+                                <div class="board-front" [@isVisible]="this.educationVis? 'false':'true'">Education</div>
+                                <div class="board-back" [@isVisible]="!this.educationVis? 'false':'true'">
+                                        <div class="university-container">
+                                                <div class="university-text">
+                                                        University of Waterloo Computer Science Co-op Class of 2025
+                                                </div>
+                                                <div class="university-image"></div>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="flip-board clickable-board" (click)='this.passionVis = !this.passionVis'>
+                                <div class="board-front" [@isVisible]="this.passionVis? 'false':'true'">Passion</div>
+                                <div class="board-back" [@isVisible]="!this.passionVis? 'false':'true'">
+                                        <div class='passion-container'>
+                                                <div class="passion-text">
+                                                        Software Development <br/> 💻 + ☕️ = 😄
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="flip-board clickable-board" (click)='this.pastimesVis = !this.pastimesVis'>
+                                <div class="board-front" [@isVisible]="this.pastimesVis? 'false':'true'">Pastimes</div>
+                                <div class="board-back" [@isVisible]="!this.pastimesVis? 'false':'true'">
+                                        <div class="pastimes-container">
+                                                <div class="pastimes-text">
+                                                        Learning • Building • Exercising
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="flip-board clickable-board" (click)='this.quoteVis = !this.quoteVis'>
+                                <div class="board-front" [@isVisible]="this.quoteVis? 'false':'true'">Quote</div>
+                                <div class="board-back" [@isVisible]="!this.quoteVis? 'false':'true'">
+                                        <div class="quote-container">
+                                                <div class="quote-text">
+                                                        "Never Stop Improving" -Lowe's
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="flip-board clickable-board" (click)='this.hireVis = !this.hireVis'>
+                                <div class="board-front" [@isVisible]="this.hireVis? 'false':'true'">Hire me! </div>
+                                <div class="board-back" [@isVisible]="!this.hireVis? 'false':'true'">
+                                        <div class="hire-me-text">
+                                                I'm looking for a free lance jobs and a co-op position for the fall term of 2021 <br/> 🌟Reach out! 
+                                        </div>
+                                </div>
+                        </div> -->
+                </div>
+                
                 
         </div>
 </div>

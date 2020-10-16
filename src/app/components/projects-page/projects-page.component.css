@@ -36,7 +36,8 @@
         font-size: 40px;
         color: white;
         padding: 10px;
-        border-bottom: 3px solid rgb(253, 0, 127);
+        /* border-bottom: 3px solid rgb(253, 0, 127); */
+        border-bottom: 3px solid rgb(1, 108, 255);
         font-family: 'poppins-semibold';
         border-radius: 5px;
 }

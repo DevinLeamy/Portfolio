@@ -27,6 +27,7 @@
         margin: auto;
         border-radius: 5px;
         /* background-color: rgba(0, 0, 0, 0.6); */
+        transform: translateY(-110px);
 
 }
 
@@ -50,11 +51,11 @@
         width: 400px;
         font-size: 20px;
         text-align: center;
-        background-color: rgb(233, 233, 233);
+        background-color: rgb(245, 245, 245);
         color: rgb(1, 108, 255);
         padding: 10px;
         font-family: 'poppins-medium';
-        border-radius: 2px;
+        /* border-radius: 2px; */
 }
 
 .side-button-container {
