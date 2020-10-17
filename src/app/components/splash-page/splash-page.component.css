@@ -26,9 +26,6 @@
         height: 200px;
         margin: auto;
         border-radius: 5px;
-        /* background-color: rgba(0, 0, 0, 0.6); */
-        transform: translateY(-110px);
-
 }
 
 .main-header {
@@ -48,14 +45,13 @@
 .sub-header {
         margin-right: 10px;
         margin: auto;
-        width: 400px;
+        width: 380px;
         font-size: 20px;
         text-align: center;
-        background-color: rgb(245, 245, 245);
-        color: rgb(1, 108, 255);
+        background-color: white;
+        color: rgb(0, 83, 199);
         padding: 10px;
         font-family: 'poppins-medium';
-        /* border-radius: 2px; */
 }
 
 .side-button-container {
