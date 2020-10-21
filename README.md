@@ -1,4 +1,4 @@
 # Portfolio
 Built with Angular JS <br/>
-https://devinleamy.github.io/Portfolio/ <br/>
+https://devinleamy.tech <br/>
 UNDER CONSTRUCTION ⚒
