@@ -1,3 +1,2 @@
 # Portfolio
-Built with Angular JS <br/>
-https://devinleamy.tech
+Built with Angular JS
